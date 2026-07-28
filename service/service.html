@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services — ArtCraft Supply Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="service.css">
+</head>
+<body>
+
+<!-- Same header/footer markup as home-1/index.html, about.html, and
+     home-2/index.html — see the note in home-1 about lifting this
+     into components/navbar.html and components/footer.html. -->
+
+<header>
+  <nav class="wrap">
+    <a href="index.html" class="logo">
+      <span class="logo-mark"><i class="fa-solid fa-palette"></i></span>
+      <span class="logo-text">
+        <span class="name">Art<span>Craft</span></span>
+        <span class="sub">SUPPLY STUDIO</span>
+      </span>
+    </a>
+
+    <ul class="nav-links">
+      <li class="nav-dropdown"><a href="../index.html">Home</a>
+        <button class="nav-drop-btn" type="button" aria-haspopup="true" aria-expanded="false">
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <ul class="nav-dropdown-menu">
+          <li><a href="../home2/home2.html">Home 2</a></li>
+        </ul>
+      </li>
+      <li><a href="../about/about.html" >About Us</a></li>
+      <li><a href="../service/service.html" class="active">Services</a></li>
+      <li><a href="../blog/blog.html">blog</a></li>
+      <li><a href="../contact/contact 1.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="icon-btn" id="langToggle" aria-label="Toggle text direction" type="button"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode" type="button"><i class="fa-solid fa-sun"></i></button>
+      <a href="../signup/signup.html" class="btn btn-primary">Sign Up</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  
+  <section class="services-hero">
+    <div class="wrap services-hero-grid">
+      <div class="services-hero-copy reveal">
+        <span class="eyebrow">What we offer</span>
+        <h1>More than a shelf of <em>supplies</em>.</h1>
+        <p>From framing your finished piece to keeping a classroom stocked, our services cover everything around the making — not just the materials themselves.</p>
+      </div>
+      <div class="services-hero-visual reveal">
+        <img src="https://images.pexels.com/photos/10322820/pexels-photo-10322820.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Minimalist wooden and metal picture frames in an art studio">
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Our services</span>
+        <h2>Six ways we help you <em>finish the job</em>.</h2>
+        <p>Drop by the shop or ask in-store — every service below is available at Road No. 12.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-photo">
+            <img src="https://images.pexels.com/photos/10322820/pexels-photo-10322820.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Wooden and metal picture frames leaning against a studio wall">
+            <span class="service-icon"><i class="fa-solid fa-image"></i></span>
+          </div>
+          <div class="service-body">
+            <h3>Custom Framing</h3>
+            <p>Bring in a finished piece and we'll match a frame, mat, and glazing to fit it — ready in 5-7 days.</p>
+            <a href="service details.html?service=framing" class="service-link">Ask about framing <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-photo">
+            <img src="https://images.pexels.com/photos/8381889/pexels-photo-8381889.jpeg?auto=compress&cs=tinysrgb&w=700" alt="A blank white canvas on an easel">
+            <span class="service-icon"><i class="fa-solid fa-crop-simple"></i></span>
+          </div>
+          <div class="service-body">
+            <h3>Canvas Printing &amp; Stretching</h3>
+            <p>Send us a digital file or a finished print and we'll stretch it onto gallery-grade canvas, any size.</p>
+            <a href="service details.html?service=canvas-printing" class="service-link">Ask about printing <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-photo">
+            <img src="https://images.pexels.com/photos/8382222/pexels-photo-8382222.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Students painting on canvas during a private art class">
+            <span class="service-icon"><i class="fa-solid fa-chalkboard-user"></i></span>
+          </div>
+          <div class="service-body">
+            <h3>Private &amp; Group Workshops</h3>
+            <p>Book the studio after hours for a private class, team outing, or small group session in any medium.</p>
+            <a href="service details.html?service=workshops" class="service-link">See workshop calendar <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-photo">
+            <img src="https://images.pexels.com/photos/10520248/pexels-photo-10520248.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Beautifully wrapped gift boxes with ribbons">
+            <span class="service-icon"><i class="fa-solid fa-gift"></i></span>
+          </div>
+          <div class="service-body">
+            <h3>Gift Wrapping &amp; Hampers</h3>
+            <p>Turn any purchase into a gift — hand-wrapped on the spot, or built into a curated hamper for someone else.</p>
+            <a href="service details.html?service=gift-wrapping" class="service-link">Ask about gifting <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-photo">
+            <img src="https://images.pexels.com/photos/16694634/pexels-photo-16694634.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Vibrant retail shelves of art supplies">
+            <span class="service-icon"><i class="fa-solid fa-boxes-stacked"></i></span>
+          </div>
+          <div class="service-body">
+            <h3>Bulk &amp; Business Orders</h3>
+            <p>Schools, studios, and offices get volume pricing and a dedicated order contact for recurring supply runs.</p>
+            <a href="service details.html?service=bulk-orders" class="service-link">Get a quote <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-photo">
+            <img src="https://images.pexels.com/photos/33029296/pexels-photo-33029296.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Children painting together at an outdoor art class">
+            <span class="service-icon"><i class="fa-solid fa-cake-candles"></i></span>
+          </div>
+          <div class="service-body">
+            <h3>Kids' Birthday Craft Parties</h3>
+            <p>A themed craft activity, all materials included, and clean-up handled — book a party for 6 to 15 kids.</p>
+            <a href="service details.html?service=birthday-parties" class="service-link">Plan a party <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="process">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <span class="eyebrow">How it works</span>
+        <h2>Booking a service takes <em>one conversation</em>.</h2>
+      </div>
+
+      <div class="process-row">
+        <div class="process-item reveal">
+          <div class="process-number">1</div>
+          <h3>Tell us what you need</h3>
+          <p>Drop by, call, or message us through the contact form with what you're hoping to get done.</p>
+        </div>
+        <div class="process-item reveal">
+          <div class="process-number">2</div>
+          <h3>Get a quote &amp; timeline</h3>
+          <p>We'll confirm pricing and a realistic turnaround before anything is booked or charged.</p>
+        </div>
+        <div class="process-item reveal">
+          <div class="process-number">3</div>
+          <h3>We handle the rest</h3>
+          <p>Pick it up, have it shipped, or let us set the date — whichever fits the service you've chosen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="services-cta-section">
+    <div class="services-cta reveal">
+      <div>
+        <h2>Not sure which service fits?</h2>
+        <p>Tell us what you're working on and we'll point you to the right one — or combine a few.</p>
+      </div>
+      <div class="services-cta-actions">
+        <a href="index.html#contact" class="btn btn-primary">Ask us anything</a>
+        <a href="about.html" class="btn btn-outline">Read our story</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-mark"><i class="fa-solid fa-palette"></i></span>
+          <span class="logo-text">
+            <span class="name">Art<span>Craft</span></span>
+            <span class="sub">SUPPLY STUDIO</span>
+          </span>
+        </a>
+        <p>An art and craft supply shop for painters, drawers, sculptors, and makers of all kinds — right on Road No. 12, Hyderabad.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Shop</h5>
+        <a href="index.html#medium">Painting</a>
+        <a href="index.html#medium">Drawing</a>
+        <a href="index.html#medium">Sculpting</a>
+        <a href="index.html#medium">Crafting</a>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <a href="../index.html">Home 1</a>
+        <a href="../home2/home2.html">Home 2</a>
+        <a href="../about/about.html">About Us</a>
+        <a href="../service/service.html">Services</a>
+        <a href="../blog/blog.html" class="active">blog</a>
+        <a href="../contact/contact 1.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <a href="about.html">About Us</a>
+        <a href="index.html#contact">Help centre</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ArtCraft Supply Studio, Hyderabad.</span>
+      <span>Made with paint-stained hands.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="service.js"></script>
+
+</body>
+</html>

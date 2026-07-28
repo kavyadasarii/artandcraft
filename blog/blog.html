@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog — ArtCraft Supply Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="blog.css">
+</head>
+<body>
+
+
+<header>
+  <nav class="wrap">
+    <a href="index.html" class="logo">
+      <span class="logo-mark"><i class="fa-solid fa-palette"></i></span>
+      <span class="logo-text">
+        <span class="name">Art<span>Craft</span></span>
+        <span class="sub">SUPPLY STUDIO</span>
+      </span>
+    </a>
+
+    <ul class="nav-links">
+      <li class="nav-dropdown"><a href="../index.html">Home</a>
+        <button class="nav-drop-btn" type="button" aria-haspopup="true" aria-expanded="false">
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <ul class="nav-dropdown-menu">
+          <li><a href="../home2/home2.html">Home 2</a></li>
+        </ul>
+      </li>
+      <li><a href="../about/about.html">About Us</a></li>
+      <li><a href="../service/service.html">Services</a></li>
+      <li><a href="../blog/blog.html" class="active">blog</a></li>
+      <li><a href="../contact/contact 1.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="icon-btn" id="langToggle" aria-label="Toggle text direction" type="button"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode" type="button"><i class="fa-solid fa-sun"></i></button>
+      <a href="../signup/signup.html" class="btn btn-primary">Sign Up</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  
+  <section class="blog-hero">
+    <div class="wrap reveal">
+      <span class="eyebrow">From the studio</span>
+      <h1>Notes, tips, and <em>things worth making</em>.</h1>
+      <p>Beginner guides, medium comparisons, and the occasional look behind the counter — written by the people who stock the shelves.</p>
+    </div>
+  </section>
+
+  
+  <section>
+    <div class="wrap">
+      <a href="blog details.html?post=watercolor-beginners" class="featured-post reveal">
+        <div class="featured-photo">
+          <span class="featured-tag">Featured</span>
+          <img src="https://images.pexels.com/photos/6925029/pexels-photo-6925029.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="A colorful array of watercolor paints and brushes">
+        </div>
+        <div class="featured-body">
+          <div class="featured-meta"><span>Painting</span><span>Jul 18, 2026</span><span>6 min read</span></div>
+          <h2>Watercolor for Absolute Beginners: 5 Mistakes to Avoid</h2>
+          <p>From overworking your paper to buying the wrong brush first — the small fixes that make your first few paintings look far less frustrating.</p>
+          <span class="featured-link">Read the guide <i class="fa-solid fa-arrow-right"></i></span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  
+  <section id="posts">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">All posts</span>
+        <h2>Browse by <em>medium</em>.</h2>
+      </div>
+
+      <div class="blog-filter-row reveal">
+        <button type="button" class="chip active" data-filter="all">All</button>
+        <button type="button" class="chip" data-filter="painting">Painting</button>
+        <button type="button" class="chip" data-filter="drawing">Drawing</button>
+        <button type="button" class="chip" data-filter="sculpting">Sculpting</button>
+        <button type="button" class="chip" data-filter="crafting">Crafting</button>
+        <button type="button" class="chip" data-filter="workshops">Workshops</button>
+      </div>
+
+      <div class="blog-grid" id="blogGrid">
+        <a href="blog details.html?post=colored-pencils" class="blog-card reveal" data-category="drawing">
+          <div class="blog-photo">
+            <img src="https://images.pexels.com/photos/6952402/pexels-photo-6952402.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Colorful pencils arranged for drawing">
+            <span class="blog-cat-tag">Drawing</span>
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta">Jul 12, 2026 · 4 min read</div>
+            <h3>Choosing Your First Set of Colored Pencils</h3>
+            <p>Wax-based or oil-based? Tin of 12 or tin of 36? Here's what actually matters for a beginner.</p>
+            <span class="blog-link">Read more <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <a href="blog details.html?post=air-dry-clay" class="blog-card reveal" data-category="sculpting">
+          <div class="blog-photo">
+            <img src="https://images.pexels.com/photos/6692632/pexels-photo-6692632.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Hands shaping a clay pot">
+            <span class="blog-cat-tag">Sculpting</span>
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta">Jul 5, 2026 · 5 min read</div>
+            <h3>Air-Dry vs. Polymer Clay: Which Should You Start With?</h3>
+            <p>No kiln, no oven, no problem — but each type has trade-offs worth knowing before you buy a block.</p>
+            <span class="blog-link">Read more <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <a href="blog details.html?post=fabric-scraps" class="blog-card reveal" data-category="crafting">
+          <div class="blog-photo">
+            <img src="https://images.pexels.com/photos/6358783/pexels-photo-6358783.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Crafting tools including tape and ribbons">
+            <span class="blog-cat-tag">Crafting</span>
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta">Jun 28, 2026 · 3 min read</div>
+            <h3>5 Ways to Use Leftover Fabric Scraps</h3>
+            <p>Before you toss that offcut bin, here are five small projects that put every scrap to work.</p>
+            <span class="blog-link">Read more <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <a href="blog details.html?post=pottery-workshop" class="blog-card reveal" data-category="workshops">
+          <div class="blog-photo">
+            <img src="https://images.pexels.com/photos/8382222/pexels-photo-8382222.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Students painting on canvas during a workshop">
+            <span class="blog-cat-tag">Workshops</span>
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta">Jun 20, 2026 · 4 min read</div>
+            <h3>What to Expect at Your First Pottery Workshop</h3>
+            <p>From what to wear to how messy it actually gets — a walkthrough for first-timers who are nervous to book.</p>
+            <span class="blog-link">Read more <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <a href="blog details.html?post=yarn-weights" class="blog-card reveal" data-category="crafting">
+          <div class="blog-photo">
+            <img src="https://images.pexels.com/photos/15391101/pexels-photo-15391101.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Vibrant shelves of multi-colored yarn rolls">
+            <span class="blog-cat-tag">Crafting</span>
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta">Jun 14, 2026 · 5 min read</div>
+            <h3>A Beginner's Guide to Yarn Weights</h3>
+            <p>Lace, fingering, worsted, bulky — what the labels mean and which one to grab for your first project.</p>
+            <span class="blog-link">Read more <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <a href="blog details.html?post=store-art-supplies" class="blog-card reveal" data-category="painting">
+          <div class="blog-photo">
+            <img src="https://images.pexels.com/photos/28480214/pexels-photo-28480214.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Colorful acrylic paints and brushes on a wooden table">
+            <span class="blog-cat-tag">Painting</span>
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta">Jun 6, 2026 · 4 min read</div>
+            <h3>How to Store Your Art Supplies So They Actually Last</h3>
+            <p>Cracked paint tubes and warped paper are usually a storage problem, not a quality one. Here's the fix.</p>
+            <span class="blog-link">Read more <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="blog-newsletter">
+    <div class="wrap blog-newsletter-inner reveal">
+      <div class="blog-newsletter-copy">
+        <h2>New posts land in your inbox first.</h2>
+        <p>One short email a week — no spam, unsubscribe any time.</p>
+      </div>
+      <div>
+        <form class="blog-newsletter-form" id="blogNewsletterForm" novalidate>
+          <input type="email" id="blogNewsletterEmail" placeholder="you@example.com" required>
+          <button type="submit">Subscribe</button>
+        </form>
+        <p class="blog-newsletter-success" id="blogNewsletterSuccess" role="status">
+          <i class="fa-solid fa-circle-check"></i> You're on the list!
+        </p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-mark"><i class="fa-solid fa-palette"></i></span>
+          <span class="logo-text">
+            <span class="name">Art<span>Craft</span></span>
+            <span class="sub">SUPPLY STUDIO</span>
+          </span>
+        </a>
+        <p>An art and craft supply shop for painters, drawers, sculptors, and makers of all kinds — right on Road No. 12, Hyderabad.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Shop</h5>
+        <a href="index.html#medium">Painting</a>
+        <a href="index.html#medium">Drawing</a>
+        <a href="index.html#medium">Sculpting</a>
+        <a href="index.html#medium">Crafting</a>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <a href="../index.html">Home 1</a>
+        <a href="../home2/home2.html">Home 2</a>
+        <a href="../about/about.html">About Us</a>
+        <a href="../service/service.html">Services</a>
+        <a href="../blog/blog.html" class="active">blog</a>
+        <a href="../contact/contact 1.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Help centre</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ArtCraft Supply Studio, Hyderabad.</span>
+      <span>Made with paint-stained hands.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="blog-main.js"></script>
+
+</body>
+</html>
