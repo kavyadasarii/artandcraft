@@ -1,9 +1,4 @@
-/* ============================================================
-   HOME.CSS — ArtCraft Supply Studio · Home 1
-   Matches the established look: cream paper background, deep
-   ink text, a warm terracotta accent, serif display headlines
-   with an italic accent word, and pill buttons.
-   ============================================================ */
+
 
 :root{
   --ink:#241C16;
@@ -19,9 +14,6 @@
   --border:rgba(36,28,22,0.12);
   --tint:rgba(193,101,45,0.08);
 
-  /* Fixed-dark surfaces: stay dark regardless of light/dark mode,
-     used for the contact section and small badge chips so they
-     don't invert into low-contrast combinations in dark mode. */
   --surface-fixed-dark:#241C16;
   --text-on-fixed-dark:#FFF8EF;
 
@@ -122,7 +114,7 @@ nav.wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;
 .nav-drop-btn:hover{color:var(--ink);}
 .nav-drop-btn i{font-size:0.62rem;transition:transform .2s ease;}
 .nav-dropdown-menu{
-  position:absolute;top:calc(100% + 16px);left:50%;transform:translateX(-50%) translateY(6px);
+  position:absolute;top:30px;left:50%;transform:translateX(-50%) translateY(6px);
   background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:8px;min-width:160px;
   box-shadow:var(--shadow-card);opacity:0;pointer-events:none;transition:opacity .18s ease, transform .18s ease;z-index:40;
 }
@@ -134,6 +126,7 @@ nav.wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;
 .nav-dropdown-menu li a:hover{background:var(--tint);color:var(--ink);}
 
 .nav-actions{display:flex;align-items:center;gap:10px;}
+.nav-signup{display:none;}
 .icon-btn{
   width:38px;height:38px;border-radius:50%;flex:none;border:1px solid var(--border);background:var(--surface);
   display:flex;align-items:center;justify-content:center;color:var(--ink-muted);font-size:0.9rem;cursor:pointer;
@@ -184,9 +177,6 @@ section{padding:88px 0;}
 .section-head h2 em{color:var(--accent);font-style:italic;}
 .section-head p{color:var(--ink-muted);margin-top:14px;font-size:1.02rem;}
 
-/* ============================================================
-   1) SHOP BY MEDIUM
-   ============================================================ */
 .medium-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
 .medium-card{
   background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);
@@ -210,9 +200,6 @@ section{padding:88px 0;}
 }
 .medium-link:hover{color:var(--accent-deep);}
 
-/* ============================================================
-   2) WORKSHOPS
-   ============================================================ */
 .workshops{background:var(--surface-alt);}
 .workshop-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
 .workshop-card{
@@ -266,9 +253,6 @@ section{padding:88px 0;}
 .kit-price{font-family:var(--display);font-size:1.4rem;font-weight:700;color:var(--ink);}
 .kit-price span{font-size:0.8rem;color:var(--ink-faint);font-weight:400;text-decoration:line-through;margin-inline-start:6px;}
 
-/* ============================================================
-   4) CONTACT
-   ============================================================ */
 .contact-section{background:var(--surface-fixed-dark);}
 .contact-grid{display:grid;grid-template-columns:0.9fr 1.1fr;gap:52px;align-items:start;}
 .contact-copy .eyebrow{color:rgba(251,243,234,0.65);}
@@ -328,8 +312,6 @@ footer{background:var(--surface-alt);border-top:1px solid var(--border);padding:
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease, transform .6s ease;}
 .reveal.in-view{opacity:1;transform:translateY(0);}
 
-/* Staggered entrance for cards within each grid, so items cascade
-   in one after another instead of popping in all at once. */
 .medium-grid .reveal:nth-child(2){transition-delay:.08s;}
 .medium-grid .reveal:nth-child(3){transition-delay:.16s;}
 .medium-grid .reveal:nth-child(4){transition-delay:.24s;}
@@ -343,9 +325,239 @@ footer{background:var(--surface-alt);border-top:1px solid var(--border);padding:
 .hero-visual.reveal{transition-delay:.12s;}
 .contact-form.reveal{transition-delay:.1s;}
 
-/* ================================================================
-   RESPONSIVE — four tiers: <640 / 640–1023 / 1024–1279 / >=1280
-   ================================================================ */
+.art-pricing-cta-section{
+
+    padding:70px 0;
+
+    background:var(--bg);
+
+}
+
+.art-pricing-cta-box{
+
+    position:relative;
+
+    overflow:hidden;
+
+    max-width:1100px;
+
+    margin:auto;
+
+    padding:70px 50px;
+
+    border-radius:32px;
+
+    background:
+    linear-gradient(rgba(36,28,22,.78),
+    rgba(36,28,22,.78)),
+    url("https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=1800&q=80");
+
+    background-size:cover;
+
+    background-position:center;
+
+    text-align:center;
+
+    color:#fff;
+
+}
+
+.art-pricing-cta-box::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    radial-gradient(circle at top right,
+    rgba(193,101,45,.25),
+    transparent 35%);
+
+}
+
+.art-pricing-cta-box>*{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.art-pricing-cta-box .eyebrow{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:#fff;
+
+    margin-bottom:18px;
+
+}
+
+.art-pricing-cta-box .eyebrow::before{
+
+    display:none;
+
+}
+
+.art-pricing-cta-box .eyebrow svg{
+
+    width:18px;
+
+    height:18px;
+
+    color:var(--accent);
+
+}
+
+.art-pricing-cta-box h2{
+
+    color:#fff;
+
+    font-size:clamp(2.3rem,4vw,3.8rem);
+
+    margin-bottom:20px;
+
+}
+
+.art-pricing-cta-box h2 span{
+
+    color:var(--accent);
+
+    font-style:italic;
+
+}
+
+.art-pricing-cta-box p{
+
+    max-width:650px;
+
+    margin:0 auto 35px;
+
+    color:rgba(255,255,255,.85);
+
+    line-height:1.8;
+
+}
+
+.art-pricing-cta-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:35px;
+
+}
+
+.art-pricing-cta-box .btn-outline{
+
+    border-color:#fff;
+
+    color:#fff;
+
+}
+
+.art-pricing-cta-box .btn-outline:hover{
+
+    background:#fff;
+
+    color:#241C16;
+
+}
+
+.art-pricing-cta-note{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+}
+
+.art-pricing-cta-note div{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:rgba(255,255,255,.9);
+
+    font-size:.95rem;
+
+}
+
+.art-pricing-cta-note svg{
+
+    width:18px;
+
+    height:18px;
+
+    color:var(--accent);
+
+}
+
+
+body[dir="rtl"] .art-pricing-cta-note div,
+body[dir="rtl"] .art-pricing-cta-buttons .btn{
+
+    flex-direction:row-reverse;
+
+}
+
+
+@media(max-width:768px){
+
+    .art-pricing-cta-section{
+
+        padding:80px 0;
+
+    }
+
+    .art-pricing-cta-box{
+
+        padding:50px 25px;
+
+        border-radius:24px;
+
+    }
+
+    .art-pricing-cta-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .art-pricing-cta-buttons .btn{
+
+        width:100%;
+
+    }
+
+    .art-pricing-cta-note{
+
+        flex-direction:column;
+
+        gap:16px;
+
+    }
+
+}
+
 @media (max-width:1279px){ :root{ --side-pad:5vw; } }
 
 @media (max-width:1023px){
@@ -362,11 +574,20 @@ footer{background:var(--surface-alt);border-top:1px solid var(--border);padding:
   .nav-toggle{display:flex;background:none;border:1px solid var(--border);border-radius:10px;width:40px;height:40px;align-items:center;justify-content:center;color:var(--ink);cursor:pointer;}
   .nav-links.mobile-open{
     display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;
-    background:var(--surface);border-bottom:1px solid var(--border);padding:8px var(--side-pad) 18px;gap:2px;z-index:90;
+    background:var(--surface);border-bottom:1px solid var(--border);padding:10px var(--side-pad) 20px;gap:0;z-index:90;
   }
-  .nav-links.mobile-open a{padding:12px 4px;border-bottom:1px solid var(--border);}
-  .nav-links.mobile-open .nav-dropdown-menu{position:static;transform:none;opacity:1;pointer-events:auto;box-shadow:none;display:none;margin:4px 0;padding-inline-start:12px;background:transparent;border:none;}
+  .nav-links.mobile-open li{width:100%;}
+  .nav-links.mobile-open a{display:block;padding:14px 4px;border-bottom:1px solid var(--border);}
+  .nav-links.mobile-open .nav-dropdown-menu{position:static;transform:none;opacity:1;pointer-events:auto;box-shadow:none;display:none;margin:2px 0 6px;padding-inline-start:12px;background:transparent;border:none;}
   .nav-links.mobile-open .nav-dropdown.open .nav-dropdown-menu{display:block;}
+
+  /* Sign Up moves inside the hamburger menu on mobile */
+  .nav-actions .btn-primary{display:none;}
+  .nav-signup{display:block;margin-top:16px;}
+  .nav-links.mobile-open .nav-signup a{
+    display:flex;width:100%;padding:14px 28px;
+    border-bottom:none;
+  }
 }
 
 @media (max-width:640px){
@@ -379,6 +600,47 @@ footer{background:var(--surface-alt);border-top:1px solid var(--border);padding:
   .form-row{grid-template-columns:1fr;}
   .footer-grid{grid-template-columns:1fr;}
   .contact-form{padding:24px;}
+}
+
+@media (max-width:480px){
+
+  /* Header: logo + icon buttons + Sign Up + hamburger all in one
+     row was overflowing on narrow phones — trim it down. */
+  .logo-text .sub{display:none;}
+  .nav-actions{gap:8px;}
+  .logo-mark{width:36px;height:36px;font-size:0.95rem;}
+  .logo-text .name{font-size:1.05rem;}
+
+  /* Hero */
+  .hero{padding-block:36px 64px;}
+  .hero-copy h1{max-width:none;}
+  .hero-actions{flex-direction:column;align-items:stretch;gap:12px;}
+  .hero-actions .btn{width:100%;}
+  .hero-stats{gap:20px 28px;}
+  .hero-badge{margin-inline:10px;padding:16px 18px;}
+  .hero-badge strong{font-size:1.02rem;}
+
+  /* Section heading rhythm */
+  .section-head{margin-bottom:34px;}
+
+  /* Kit cards: price + button can get tight on very narrow cards */
+  .kit-card{padding:22px;}
+  .kit-price-row{flex-wrap:wrap;}
+  .kit-price-row .btn{width:100%;}
+
+  /* Workshop meta row: date/time + seats badge */
+  .workshop-meta{flex-wrap:wrap;row-gap:8px;}
+  .workshop-body{padding:20px 18px 22px;}
+
+  /* Medium cards */
+  .medium-body{padding:28px 18px 20px;}
+
+  /* Contact */
+  .contact-form{padding:20px;}
+  .contact-info li{font-size:0.88rem;}
+
+  /* Footer */
+  .footer-bottom{flex-direction:column;text-align:center;gap:8px;}
 }
 
 @media (prefers-reduced-motion:reduce){

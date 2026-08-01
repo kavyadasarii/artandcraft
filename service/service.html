@@ -8,12 +8,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <link rel="stylesheet" href="service.css">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
 </head>
 <body>
 
-<!-- Same header/footer markup as home-1/index.html, about.html, and
-     home-2/index.html — see the note in home-1 about lifting this
-     into components/navbar.html and components/footer.html. -->
+
 
 <header>
   <nav class="wrap">
@@ -36,8 +35,10 @@
       </li>
       <li><a href="../about/about.html" >About Us</a></li>
       <li><a href="../service/service.html" class="active">Services</a></li>
+      <li><a href="../pricing/pricing.html">pricing</a></li>
       <li><a href="../blog/blog.html">blog</a></li>
       <li><a href="../contact/contact 1.html">Contact</a></li>
+      <li class="nav-signup"><a href="../signup/signup.html" class="btn btn-primary">Sign Up</a></li>
     </ul>
 
     <div class="nav-actions">
@@ -78,7 +79,6 @@
         <div class="service-card reveal">
           <div class="service-photo">
             <img src="https://images.pexels.com/photos/10322820/pexels-photo-10322820.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Wooden and metal picture frames leaning against a studio wall">
-            <span class="service-icon"><i class="fa-solid fa-image"></i></span>
           </div>
           <div class="service-body">
             <h3>Custom Framing</h3>
@@ -90,7 +90,6 @@
         <div class="service-card reveal">
           <div class="service-photo">
             <img src="https://images.pexels.com/photos/8381889/pexels-photo-8381889.jpeg?auto=compress&cs=tinysrgb&w=700" alt="A blank white canvas on an easel">
-            <span class="service-icon"><i class="fa-solid fa-crop-simple"></i></span>
           </div>
           <div class="service-body">
             <h3>Canvas Printing &amp; Stretching</h3>
@@ -102,7 +101,6 @@
         <div class="service-card reveal">
           <div class="service-photo">
             <img src="https://images.pexels.com/photos/8382222/pexels-photo-8382222.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Students painting on canvas during a private art class">
-            <span class="service-icon"><i class="fa-solid fa-chalkboard-user"></i></span>
           </div>
           <div class="service-body">
             <h3>Private &amp; Group Workshops</h3>
@@ -114,7 +112,6 @@
         <div class="service-card reveal">
           <div class="service-photo">
             <img src="https://images.pexels.com/photos/10520248/pexels-photo-10520248.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Beautifully wrapped gift boxes with ribbons">
-            <span class="service-icon"><i class="fa-solid fa-gift"></i></span>
           </div>
           <div class="service-body">
             <h3>Gift Wrapping &amp; Hampers</h3>
@@ -126,7 +123,6 @@
         <div class="service-card reveal">
           <div class="service-photo">
             <img src="https://images.pexels.com/photos/16694634/pexels-photo-16694634.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Vibrant retail shelves of art supplies">
-            <span class="service-icon"><i class="fa-solid fa-boxes-stacked"></i></span>
           </div>
           <div class="service-body">
             <h3>Bulk &amp; Business Orders</h3>
@@ -138,7 +134,6 @@
         <div class="service-card reveal">
           <div class="service-photo">
             <img src="https://images.pexels.com/photos/33029296/pexels-photo-33029296.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Children painting together at an outdoor art class">
-            <span class="service-icon"><i class="fa-solid fa-cake-candles"></i></span>
           </div>
           <div class="service-body">
             <h3>Kids' Birthday Craft Parties</h3>
@@ -179,18 +174,64 @@
   </section>
 
   
-  <section class="services-cta-section">
-    <div class="services-cta reveal">
-      <div>
-        <h2>Not sure which service fits?</h2>
-        <p>Tell us what you're working on and we'll point you to the right one — or combine a few.</p>
-      </div>
-      <div class="services-cta-actions">
-        <a href="index.html#contact" class="btn btn-primary">Ask us anything</a>
-        <a href="about.html" class="btn btn-outline">Read our story</a>
-      </div>
+ 
+<section class="art-pricing-cta-section">
+
+    <div class="wrap">
+
+        <div class="art-pricing-cta-box">
+
+            <span class="eyebrow">
+                <i data-lucide="palette"></i>
+                Start Your Creative Journey
+            </span>
+
+            <h2>
+                Ready to <span>Unleash Your Creativity</span>?
+            </h2>
+
+            <p>
+                Explore premium art supplies, join inspiring workshops, and enjoy exclusive member benefits. Everything you need to create your next masterpiece is waiting for you.
+            </p>
+
+            <div class="art-pricing-cta-buttons">
+
+                <a href="#" class="btn btn-primary">
+                    <i data-lucide="shopping-bag"></i>
+                    Shop Now
+                </a>
+
+                <a href="#" class="btn btn-outline">
+                    <i data-lucide="calendar-days"></i>
+                    View Workshops
+                </a>
+
+            </div>
+
+            <div class="art-pricing-cta-note">
+
+                <div>
+                    <i data-lucide="badge-check"></i>
+                    Premium Products
+                </div>
+
+                <div>
+                    <i data-lucide="truck"></i>
+                    Fast Delivery
+                </div>
+
+                <div>
+                    <i data-lucide="shield-check"></i>
+                    Secure Shopping
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
-  </section>
+
+</section>
 
 </main>
 
@@ -198,7 +239,7 @@
   <div class="wrap">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="index.html" class="logo">
+        <a href="../index.html" class="logo">
           <span class="logo-mark"><i class="fa-solid fa-palette"></i></span>
           <span class="logo-text">
             <span class="name">Art<span>Craft</span></span>
@@ -213,13 +254,6 @@
         </div>
       </div>
       <div class="footer-col">
-        <h5>Shop</h5>
-        <a href="index.html#medium">Painting</a>
-        <a href="index.html#medium">Drawing</a>
-        <a href="index.html#medium">Sculpting</a>
-        <a href="index.html#medium">Crafting</a>
-      </div>
-      <div class="footer-col">
         <h5>Quick Links</h5>
         <a href="../index.html">Home 1</a>
         <a href="../home2/home2.html">Home 2</a>
@@ -229,10 +263,30 @@
         <a href="../contact/contact 1.html">Contact</a>
       </div>
       <div class="footer-col">
-        <h5>Company</h5>
-        <a href="about.html">About Us</a>
-        <a href="index.html#contact">Help centre</a>
+        <h5>Additional pages</h5>
+        <a href="../additional/404.html">404 page</a>
+        <a href="../additional/coming-soon.html">Coming-soon</a>
+        <a href="../pricing/pricing.html">Pricing</a>
       </div>
+      <div class="footer-col">
+    <h5>Contact</h5>
+
+    <a href="tel:+919876543210">
+        <i class="fa-solid fa-phone"></i> +91 98765 43210
+    </a>
+
+    <a href="mailto:hello@artcraftstudio.in">
+        <i class="fa-solid fa-envelope"></i> hello@artcraftstudio.in
+    </a>
+
+    <a href="https://maps.google.com/?q=Road+No.+12,+Banjara+Hills,+Hyderabad,+Telangana+500034" target="_blank">
+        <i class="fa-solid fa-location-dot"></i> Hyderabad, Telangana
+    </a>
+
+    <a href="https://wa.me/919876543210" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp
+    </a>
+</div>
     </div>
     <div class="footer-bottom">
       <span>© 2026 ArtCraft Supply Studio, Hyderabad.</span>

@@ -38,7 +38,7 @@ a { color: inherit; }
   overflow: hidden;
 }
 
-/* ---------- Visual side ---------- */
+
 .auth-visual {
   position: relative;
   overflow: hidden;
@@ -143,7 +143,7 @@ a { color: inherit; }
   color: rgba(255,255,255,0.65);
 }
 
-/* ---------- Form side ---------- */
+
 .auth-form-side {
   display: flex;
   align-items: center;
@@ -200,7 +200,7 @@ a { color: inherit; }
 
 .auth-sub a:hover { border-color: var(--clay-dark); }
 
-/* Social buttons */
+
 .social-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -249,7 +249,7 @@ a { color: inherit; }
   background: var(--line);
 }
 
-/* Form fields */
+
 .field {
   margin-bottom: .8rem;
 }
@@ -399,7 +399,7 @@ body {
 .auth-form-side {
     overflow-y: auto;
 }
-/* ---------- Responsive ---------- */
+
 @media (max-width: 920px) {
   .auth-shell { grid-template-columns: 1fr; }
   .auth-visual { display: none; }

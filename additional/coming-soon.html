@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coming Soon — ArtCraft Supply Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="coming-soon.css">
+</head>
+<body>
+
+<a class="brand" href="../index.html">
+  <span class="brand-mark"><i class="fa-solid fa-palette"></i></span>
+  <span class="brand-text">
+    <span class="name">Art<span>Craft</span></span>
+    <span class="sub">SUPPLY STUDIO</span>
+  </span>
+</a>
+
+<main>
+  <section class="special">
+    <div class="wrap special-grid">
+      <div class="special-copy reveal">
+        <span class="eyebrow">Online store · Opening soon</span>
+        <h1>We're still <em>mixing the paint</em>.</h1>
+        <p>ArtCraft is moving online — the same 1,200+ supplies, workshop bookings, and beginner kits you know from Road No. 12, now a click away. Leave your email and we'll let you know the moment we open.</p>
+
+        <div class="countdown" id="countdown" aria-label="Time until launch">
+          <div class="countdown-unit"><b id="cd-days">00</b><span>Days</span></div>
+          <div class="countdown-unit"><b id="cd-hours">00</b><span>Hours</span></div>
+          <div class="countdown-unit"><b id="cd-mins">00</b><span>Mins</span></div>
+          <div class="countdown-unit"><b id="cd-secs">00</b><span>Secs</span></div>
+        </div>
+
+        <p class="notify-success" id="notifySuccess" role="status"><i class="fa-solid fa-circle-check"></i> You're on the list — we'll email you at launch.</p>
+
+        <form class="notify-form" id="notifyForm" novalidate>
+          <label for="notifyEmail" class="sr-only">Email address</label>
+          <input type="email" id="notifyEmail" placeholder="you@example.com" required>
+          <button type="submit" class="btn btn-primary"><i class="fa-solid fa-bell"></i> Notify me</button>
+        </form>
+        <p class="notify-note">No spam — just one email when the store goes live.</p>
+      </div>
+
+      <div class="easel-wrap reveal" aria-hidden="true">
+        <svg viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="240" cy="430" rx="150" ry="14" fill="#241C16" opacity="0.06"></ellipse>
+
+          <line x1="150" y1="430" x2="230" y2="120" stroke="#241C16" stroke-width="7" stroke-linecap="round" opacity="0.85"></line>
+          <line x1="330" y1="430" x2="250" y2="120" stroke="#241C16" stroke-width="7" stroke-linecap="round" opacity="0.85"></line>
+          <line x1="185" y1="430" x2="295" y2="430" stroke="#241C16" stroke-width="7" stroke-linecap="round" opacity="0.85"></line>
+          <line x1="170" y1="300" x2="310" y2="300" stroke="#241C16" stroke-width="9" stroke-linecap="round" opacity="0.85"></line>
+
+          <clipPath id="canvasClip">
+            <rect x="172" y="112" width="150" height="192" rx="4"></rect>
+          </clipPath>
+
+          <rect x="172" y="112" width="150" height="192" rx="4" fill="#FFFFFF" stroke="#241C16" stroke-width="3"></rect>
+
+          <g clip-path="url(#canvasClip)">
+            <rect class="easel-fill-mask" x="172" y="112" width="150" height="192" fill="#C1652D"></rect>
+            <circle class="easel-fill-mask" style="animation-delay:.15s" cx="270" cy="150" r="26" fill="#D9A441"></circle>
+            <path class="easel-fill-mask" style="animation-delay:.3s" d="M172,270 C210,250 250,290 322,255 L322,304 L172,304 Z" fill="#7C8F6E" opacity="0.8"></path>
+          </g>
+          <rect x="172" y="112" width="150" height="192" rx="4" fill="none" stroke="#241C16" stroke-width="3"></rect>
+
+          <rect class="easel-brush" x="176" y="196" width="140" height="6" rx="3" fill="#FFF8EF" opacity="0.9"></rect>
+
+          <g transform="rotate(38 356 190)">
+            <rect x="350" y="130" width="10" height="120" rx="5" fill="#8C6A4A"></rect>
+            <path d="M345,120 C345,105 365,105 365,120 L362,140 L348,140 Z" fill="#241C16"></path>
+          </g>
+
+          <g transform="translate(96 356)">
+            <ellipse cx="0" cy="0" rx="34" ry="20" fill="#FFFFFF" stroke="#241C16" stroke-width="2.5"></ellipse>
+            <circle cx="-14" cy="-3" r="5" fill="#C1652D"></circle>
+            <circle cx="0" cy="4" r="5" fill="#D9A441"></circle>
+            <circle cx="14" cy="-3" r="5" fill="#7C8F6E"></circle>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="coming-soon.js"></script>
+</body>
+</html>

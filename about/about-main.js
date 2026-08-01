@@ -99,8 +99,6 @@
       if(window.innerWidth > 1023){ closeMobileNav(); }
     });
   }
-
-  // ---- Scroll reveal ----
   var revealEls = document.querySelectorAll('.reveal');
   if('IntersectionObserver' in window && revealEls.length){
     var observer = new IntersectionObserver(function(entries){
@@ -116,7 +114,6 @@
     revealEls.forEach(function(el){ el.classList.add('in-view'); });
   }
 
-  // ---- Contact form (front-end only — wire to your email/CRM endpoint) ----
   var form = document.getElementById('contactForm');
   var successMsg = document.getElementById('formSuccess');
   if(form){

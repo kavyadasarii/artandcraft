@@ -6,7 +6,7 @@
   ============================================================ */
   var POSTS = {
 
-    /* ── 1. WATERCOLOR BEGINNERS ─────────────────────────────── */
+    
     'watercolor-beginners': {
       category: 'Painting', readTime: '8 min read',
       title: 'Watercolor for Absolute Beginners: 5 Mistakes to Avoid',
@@ -97,7 +97,7 @@
       ]
     },
 
-    /* ── 2. COLORED PENCILS ──────────────────────────────────── */
+    
     'colored-pencils': {
       category: 'Drawing', readTime: '6 min read',
       title: 'Choosing Your First Set of Colored Pencils',
@@ -186,7 +186,7 @@
       ]
     },
 
-    /* ── 3. AIR-DRY CLAY ─────────────────────────────────────── */
+    
     'air-dry-clay': {
       category: 'Sculpting', readTime: '7 min read',
       title: 'Air-Dry vs. Polymer Clay: Which Should You Start With?',
@@ -276,7 +276,7 @@
       ]
     },
 
-    /* ── 4. FABRIC SCRAPS ────────────────────────────────────── */
+    
     'fabric-scraps': {
       category: 'Crafting', readTime: '5 min read',
       title: '5 Ways to Use Leftover Fabric Scraps',
@@ -365,7 +365,7 @@
       ]
     },
 
-    /* ── 5. POTTERY WORKSHOP ─────────────────────────────────── */
+    
     'pottery-workshop': {
       category: 'Workshops', readTime: '6 min read',
       title: 'What to Expect at Your First Pottery Workshop',
@@ -456,7 +456,7 @@
       ]
     },
 
-    /* ── 6. YARN WEIGHTS ─────────────────────────────────────── */
+    
     'yarn-weights': {
       category: 'Crafting', readTime: '7 min read',
       title: 'A Beginner\'s Guide to Yarn Weights',
@@ -546,7 +546,7 @@
       ]
     },
 
-    /* ── 7. STORE ART SUPPLIES ───────────────────────────────── */
+    
     'store-art-supplies': {
       category: 'Painting', readTime: '6 min read',
       title: 'How to Store Your Art Supplies So They Actually Last',
@@ -636,7 +636,7 @@
       ]
     },
 
-    /* ── BONUS: SKETCHING BASICS ─────────────────────────────── */
+    
     'sketching-basics': {
       category: 'Drawing', readTime: '8 min read',
       title: 'Sketching Basics: The 5 Lines Every Artist Must Master',

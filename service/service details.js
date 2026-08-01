@@ -1,4 +1,4 @@
-(function(){
+document.addEventListener("DOMContentLoaded", function () {
 
   var THEME_KEY = 'artcraft-theme';
   var RTL_KEY = 'artcraft-rtl';
@@ -133,14 +133,42 @@
     });
   }
 
-  // ---- FAQ accordion ----
-  document.querySelectorAll('.faq-question').forEach(function(btn){
-    btn.addEventListener('click', function(){
-      var item = btn.closest('.faq-item');
-      var wasOpen = item.classList.contains('open');
-      document.querySelectorAll('.faq-item.open').forEach(function(i){ i.classList.remove('open'); });
-      if(!wasOpen){ item.classList.add('open'); }
+  // =========================
+// FAQ Accordion
+// =========================
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    var faqList = document.getElementById("faq-list");
+
+    if (!faqList) return;
+
+    faqList.addEventListener("click", function (e) {
+
+        var btn = e.target;
+
+        while (btn && !btn.classList.contains("faq-question")) {
+            btn = btn.parentElement;
+        }
+
+        if (!btn) return;
+
+        var item = btn.parentElement;
+
+        var openItems = faqList.getElementsByClassName("open");
+
+        while (openItems.length > 0) {
+            if (openItems[0] !== item) {
+                openItems[0].classList.remove("open");
+            } else {
+                break;
+            }
+        }
+
+        item.classList.toggle("open");
+
     });
-  });
+
+})();
 
 })();

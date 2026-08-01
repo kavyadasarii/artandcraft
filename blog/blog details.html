@@ -10,10 +10,11 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <link rel="stylesheet" href="blog.css">
 <link rel="stylesheet" href="blogs details.css">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
 </head>
 <body>
 
-<!-- ===== HEADER ===== -->
+
 <header>
   <nav class="wrap">
     <a href="../index.html" class="logo">
@@ -35,8 +36,10 @@
       </li>
       <li><a href="../about/about.html">About Us</a></li>
       <li><a href="../service/service.html">Services</a></li>
+      <li><a href="../pricing/pricing.html">pricing</a></li>
       <li><a href="../blog/blog.html" class="active">Blog</a></li>
       <li><a href="../contact/contact 1.html">Contact</a></li>
+      <li class="nav-signup"><a href="../signup/signup.html" class="btn btn-primary">Sign Up</a></li>
     </ul>
 
     <div class="nav-actions">
@@ -50,7 +53,7 @@
 
 <main>
 
-  <!-- ===== SECTION 1 · HERO / POST HEADER ===== -->
+  
   <section class="bd-hero">
     <div class="wrap bd-hero-inner reveal">
       <div class="bd-breadcrumb">
@@ -87,12 +90,12 @@
           </a>
         </div>
       </div>
-      <!-- Stats bar -->
+      
       <div class="bd-stats-bar" id="bdStatsBar"></div>
     </div>
   </section>
 
-  <!-- ===== SECTION 2 · HERO IMAGE ===== -->
+  
   <section class="bd-cover-section">
     <div class="wrap reveal">
       <figure class="bd-cover-wrap">
@@ -102,18 +105,18 @@
     </div>
   </section>
 
-  <!-- ===== IMAGE GALLERY STRIP ===== -->
+  
   <section class="bd-gallery-section">
     <div class="wrap reveal">
       <div class="bd-gallery-grid" id="bdGalleryGrid"></div>
     </div>
   </section>
 
-  <!-- ===== SECTION 3 · ARTICLE BODY ===== -->
+  
   <section class="bd-article-section">
     <div class="wrap bd-article-layout">
 
-      <!-- STICKY SIDEBAR (hidden <1024px) -->
+      
       <aside class="bd-sidebar reveal">
         <div class="bd-sidebar-sticky">
           <p class="bd-toc-label">In this article</p>
@@ -126,28 +129,28 @@
         </div>
       </aside>
 
-      <!-- MAIN CONTENT -->
+      
       <article class="bd-content reveal" id="bdArticleBody">
 
-        <!-- Intro pull-quote callout -->
+        
         <div class="bd-intro-callout" id="bdIntroCallout">
           <i class="fa-solid fa-quote-left bd-quote-icon"></i>
           <p id="bdIntroText">Every great artist started with confusion. The trick is knowing which confusion is worth paying attention to.</p>
         </div>
 
-        <!-- Key takeaways box (injected by JS) -->
+        
         <div id="bdKeyTakeaways"></div>
 
-        <!-- Article sections injected by JS -->
+        
         <div id="bdArticleSections"></div>
 
-        <!-- Supplies / tools grid (injected by JS) -->
+        
         <div id="bdSuppliesGrid"></div>
 
-        <!-- Tags -->
+        
         <div class="bd-tags-row" id="bdTagsRow"></div>
 
-        <!-- Like / bookmark bar -->
+        
         <div class="bd-react-bar">
           <button class="bd-react-btn" id="bdLikeBtn" aria-label="Like this post">
             <i class="fa-regular fa-heart"></i>
@@ -165,7 +168,7 @@
     </div>
   </section>
 
-  <!-- ===== SECTION 4 · AUTHOR BIO ===== -->
+  
   <section class="bd-author-bio-section">
     <div class="wrap bd-author-bio-inner reveal">
       <div class="bd-bio-avatar" aria-hidden="true">
@@ -183,7 +186,7 @@
     </div>
   </section>
 
-  <!-- ===== SECTION 5 · RELATED POSTS ===== -->
+  
   <section class="bd-related-section">
     <div class="wrap">
       <div class="section-head center reveal">
@@ -192,7 +195,7 @@
         <p>More from the ArtCraft studio &mdash; hand-picked to match what you just read.</p>
       </div>
       <div class="blog-grid bd-related-grid" id="bdRelatedGrid">
-        <!-- Injected by JS -->
+        
       </div>
       <div class="bd-related-cta reveal">
         <a href="blog.html" class="btn btn-outline">View all articles <i class="fa-solid fa-arrow-right"></i></a>
@@ -200,40 +203,80 @@
     </div>
   </section>
 
-  <!-- ===== NEWSLETTER (reuse blog.css styles) ===== -->
-  <section class="blog-newsletter">
-    <div class="wrap blog-newsletter-inner reveal">
-      <div class="blog-newsletter-copy">
-        <h2>New posts land in your inbox first.</h2>
-        <p>One short email a week &mdash; no spam, unsubscribe any time.</p>
-      </div>
-      <div>
-        <form class="blog-newsletter-form" id="bdNewsletterForm" novalidate>
-          <input type="email" id="bdNewsletterEmail" placeholder="you@example.com" required>
-          <button type="submit">Subscribe</button>
-        </form>
-        <p class="blog-newsletter-success" id="bdNewsletterSuccess" role="status">
-          <i class="fa-solid fa-circle-check"></i> You&rsquo;re on the list!
-        </p>
-      </div>
+  
+<section class="art-pricing-cta-section">
+
+    <div class="wrap">
+
+        <div class="art-pricing-cta-box">
+
+            <span class="eyebrow">
+                <i data-lucide="palette"></i>
+                Start Your Creative Journey
+            </span>
+
+            <h2>
+                Ready to <span>Unleash Your Creativity</span>?
+            </h2>
+
+            <p>
+                Explore premium art supplies, join inspiring workshops, and enjoy exclusive member benefits. Everything you need to create your next masterpiece is waiting for you.
+            </p>
+
+            <div class="art-pricing-cta-buttons">
+
+                <a href="#" class="btn btn-primary">
+                    <i data-lucide="shopping-bag"></i>
+                    Shop Now
+                </a>
+
+                <a href="#" class="btn btn-outline">
+                    <i data-lucide="calendar-days"></i>
+                    View Workshops
+                </a>
+
+            </div>
+
+            <div class="art-pricing-cta-note">
+
+                <div>
+                    <i data-lucide="badge-check"></i>
+                    Premium Products
+                </div>
+
+                <div>
+                    <i data-lucide="truck"></i>
+                    Fast Delivery
+                </div>
+
+                <div>
+                    <i data-lucide="shield-check"></i>
+                    Secure Shopping
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
-  </section>
+
+</section>
 
 </main>
 
-<!-- ===== FOOTER ===== -->
+
 <footer>
   <div class="wrap">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="../index.html" class="logo">
+        <a href="index.html" class="logo">
           <span class="logo-mark"><i class="fa-solid fa-palette"></i></span>
           <span class="logo-text">
             <span class="name">Art<span>Craft</span></span>
             <span class="sub">SUPPLY STUDIO</span>
           </span>
         </a>
-        <p>An art and craft supply shop for painters, drawers, sculptors, and makers of all kinds &mdash; right on Road No. 12, Hyderabad.</p>
+        <p>An art and craft supply shop for painters, drawers, sculptors, and makers of all kinds — right on Road No. 12, Hyderabad.</p>
         <div class="footer-socials">
           <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
           <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
@@ -241,35 +284,47 @@
         </div>
       </div>
       <div class="footer-col">
-        <h5>Shop</h5>
-        <a href="../index.html#medium">Painting</a>
-        <a href="../index.html#medium">Drawing</a>
-        <a href="../index.html#medium">Sculpting</a>
-        <a href="../index.html#medium">Crafting</a>
-      </div>
-      <div class="footer-col">
         <h5>Quick Links</h5>
         <a href="../index.html">Home 1</a>
         <a href="../home2/home2.html">Home 2</a>
         <a href="../about/about.html">About Us</a>
         <a href="../service/service.html">Services</a>
-        <a href="blog.html" class="active">Blog</a>
+        <a href="../blog/blog.html" class="active">blog</a>
         <a href="../contact/contact 1.html">Contact</a>
       </div>
       <div class="footer-col">
-        <h5>Company</h5>
-        <a href="../about/about.html">About Us</a>
-        <a href="../contact/contact 1.html">Help Centre</a>
+        <h5>Additional pages</h5>
+        <a href="../additional/404.html">404 page</a>
+        <a href="../additional/coming-soon.html">Coming-soon</a>
+        <a href="../pricing/pricing.html">Pricing</a>
       </div>
+      <div class="footer-col">
+    <h5>Contact</h5>
+
+    <a href="tel:+919876543210">
+        <i class="fa-solid fa-phone"></i> +91 98765 43210
+    </a>
+
+    <a href="mailto:hello@artcraftstudio.in">
+        <i class="fa-solid fa-envelope"></i> hello@artcraftstudio.in
+    </a>
+
+    <a href="https://maps.google.com/?q=Road+No.+12,+Banjara+Hills,+Hyderabad,+Telangana+500034" target="_blank">
+        <i class="fa-solid fa-location-dot"></i> Hyderabad, Telangana
+    </a>
+
+    <a href="https://wa.me/919876543210" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp
+    </a>
+</div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; 2026 ArtCraft Supply Studio, Hyderabad.</span>
+      <span>© 2026 ArtCraft Supply Studio, Hyderabad.</span>
       <span>Made with paint-stained hands.</span>
     </div>
   </div>
 </footer>
 
-<!-- Copy-link toast -->
 <div class="bd-toast" id="bdToast" role="status" aria-live="polite">
   <i class="fa-solid fa-circle-check"></i> Link copied!
 </div>
