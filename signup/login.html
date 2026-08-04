@@ -8,86 +8,71 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <link rel="stylesheet" href="auth.css">
-<link rel="icon" type="image/svg+xml" href="../favicon.svg">
 </head>
 <body>
 
+<div class="utility-bar">
+  <button type="button" id="themeToggle" class="utility-btn" aria-label="Switch to dark mode">
+    <i class="fa-solid fa-moon icon-moon"></i>
+    <i class="fa-solid fa-sun icon-sun"></i>
+  </button>
+  <button type="button" id="dirToggle" class="utility-btn" aria-label="Switch to right-to-left">RTL</button>
+</div>
+
 <div class="auth-shell">
+  <div class="auth-card">
 
-  
-  <div class="auth-visual">
-    <img src="https://images.pexels.com/photos/8382222/pexels-photo-8382222.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Students painting on canvas during a private art class">
-    <div class="auth-visual-content">
-      <a href="../index.html" class="auth-logo">
-        <span class="mark"><i class="fa-solid fa-palette"></i></span>
-        <span class="logo-text">
-          <span class="name">Art<span>Craft</span></span>
-          <span class="sub">SUPPLY STUDIO</span>
-        </span>
-      </a>
-
-      <div class="auth-quote">
-        <h2>"Welcome back to the bench."</h2>
-        <p>Log in to check your framing order, book a workshop seat, or reorder the supplies you keep coming back for.</p>
-        <div class="quote-by">Road No. 12, Hyderabad</div>
-      </div>
-    </div>
-  </div>
-
-  
-  <div class="auth-form-side">
-    <div class="auth-form-wrap">
-
-      <a href="index.html" class="mobile-logo">
-        <span class="mark"><i class="fa-solid fa-palette"></i></span>
+    <a href="../index.html" class="auth-logo">
+      <span class="mark"><i class="fa-solid fa-palette"></i></span>
+      <span class="logo-text">
         <span class="name">Art<span>Craft</span></span>
-      </a>
+        <span class="sub">SUPPLY STUDIO</span>
+      </span>
+    </a>
 
-      <span class="auth-eyebrow">Welcome back</span>
-      <h1>Log in to your <em>account</em>.</h1>
-      <p class="auth-sub">New here? <a href="signup.html">Create an account</a></p>
+    <span class="auth-eyebrow">Welcome back</span>
+    <h1>Log in to your <em>account</em>.</h1>
+    <p class="auth-sub">New here? <a href="signup.html">Create an account</a></p>
 
-      <div class="social-row">
-        <button type="button" class="social-btn google"><i class="fa-brands fa-google"></i> Google</button>
-        <button type="button" class="social-btn apple"><i class="fa-brands fa-apple"></i> Apple</button>
+    <div class="social-row">
+      <button type="button" class="social-btn google"><i class="fa-brands fa-google"></i> Google</button>
+      <button type="button" class="social-btn apple"><i class="fa-brands fa-apple"></i> Apple</button>
+    </div>
+
+    <div class="divider">or log in with email</div>
+
+    <form id="loginForm" novalidate>
+      <div class="field">
+        <label for="email">Email address</label>
+        <div class="input-wrap">
+          <i class="fa-solid fa-envelope leading"></i>
+          <input type="email" id="email" name="email" placeholder="asha@email.com" autocomplete="email" required>
+        </div>
       </div>
 
-      <div class="divider">or log in with email</div>
-
-      <form id="loginForm" novalidate>
-        <div class="field">
-          <label for="email">Email address</label>
-          <div class="input-wrap">
-            <i class="fa-solid fa-envelope leading"></i>
-            <input type="email" id="email" name="email" placeholder="asha@email.com" autocomplete="email" required>
-          </div>
+      <div class="field">
+        <label for="password">Password</label>
+        <div class="input-wrap">
+          <i class="fa-solid fa-lock leading"></i>
+          <input type="password" id="password" name="password" placeholder="Enter your password" autocomplete="current-password" required>
+          <button type="button" class="toggle-visibility" aria-label="Show password" data-target="password"><i class="fa-solid fa-eye"></i></button>
         </div>
+      </div>
 
-        <div class="field">
-          <label for="password">Password</label>
-          <div class="input-wrap">
-            <i class="fa-solid fa-lock leading"></i>
-            <input type="password" id="password" name="password" placeholder="Enter your password" autocomplete="current-password" required>
-            <button type="button" class="toggle-visibility" aria-label="Show password" data-target="password"><i class="fa-solid fa-eye"></i></button>
-          </div>
-        </div>
+      <div class="field-meta">
+        <label class="checkbox-row">
+          <input type="checkbox">
+          <span>Remember me</span>
+        </label>
+        <a href="#" class="forgot-link">Forgot password?</a>
+      </div>
 
-        <div class="field-meta">
-          <label class="checkbox-row">
-            <input type="checkbox">
-            <span>Remember me</span>
-          </label>
-          <a href="#" class="forgot-link">Forgot password?</a>
-        </div>
+      <button type="submit" class="btn-submit">Log in <i class="fa-solid fa-arrow-right"></i></button>
+    </form>
 
-        <button type="submit" class="btn-submit">Log in <i class="fa-solid fa-arrow-right"></i></button>
-      </form>
+    <p class="auth-footer-note">Having trouble signing in? <a href="index.html#contact">Contact the shop</a></p>
 
-      <p class="auth-footer-note">Having trouble signing in? <a href="index.html#contact">Contact the shop</a></p>
-
-    </div>
   </div>
-
 </div>
 
 <script src="auth.js"></script>
