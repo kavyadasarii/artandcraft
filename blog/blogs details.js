@@ -816,9 +816,6 @@
     container.appendChild(section);
   }
 
-  /* ============================================================
-     SECTION RENDERER — now handles many more block types
-  ============================================================ */
   function renderSection(sec) {
     var frag = document.createDocumentFragment();
 

@@ -1,12 +1,4 @@
-/* ============================================================
-   BLOGS DETAILS.CSS — ArtCraft Supply Studio
-   Blog detail page styles.
-   Inherits: blog.css (tokens, header, footer, cards, newsletter)
-   ============================================================ */
 
-/* ============================================================
-   SECTION 1 — POST HERO / HEADER
-   ============================================================ */
 
 .bd-hero {
   padding-block: 60px 48px;
@@ -167,9 +159,6 @@
   transform: translateY(-2px);
 }
 
-/* ============================================================
-   SECTION 2 — COVER IMAGE
-   ============================================================ */
 
 .bd-cover-section {
   padding-block: 0 0;
@@ -208,9 +197,6 @@
   text-align: center;
 }
 
-/* ============================================================
-   SECTION 3 — ARTICLE BODY (sidebar + content)
-   ============================================================ */
 
 .bd-article-section {
   padding-block: 72px;
@@ -547,9 +533,6 @@
   border-color: var(--surface-fixed-dark);
 }
 
-/* ============================================================
-   SECTION 4 — AUTHOR BIO
-   ============================================================ */
 
 .bd-author-bio-section {
   background: var(--surface-alt);
@@ -626,10 +609,6 @@
   padding: 12px 22px;
 }
 
-/* ============================================================
-   SECTION 5 — RELATED POSTS
-   ============================================================ */
-
 .bd-related-section {
   padding-block: 80px 56px;
   background: var(--bg);
@@ -651,9 +630,6 @@
   font-size: 0.92rem;
 }
 
-/* ============================================================
-   TOAST — copy-link feedback
-   ============================================================ */
 
 .bd-toast {
   position: fixed;
@@ -680,9 +656,6 @@
   transform: translateY(0);
 }
 
-/* ============================================================
-   PROGRESS BAR (reading indicator)
-   ============================================================ */
 
 .bd-progress-bar {
   position: fixed;
@@ -695,9 +668,6 @@
   transition: width 0.1s linear;
 }
 
-/* ============================================================
-   RESPONSIVE — 360–1024px centres all body content
-   ============================================================ */
 
 @media (min-width: 360px) and (max-width: 1024px) {
 
@@ -732,18 +702,12 @@
   .bd-share-row { justify-content: center; }
 }
 
-/* ============================================================
-   DARK MODE OVERRIDES (tokens auto-switch via blog.css :root vars)
-   ============================================================ */
 
 body.dark .bd-toast {
   background: #fff;
   color: var(--ink);
 }
 
-/* ============================================================
-   STATS BAR — 4 quick-stat chips inside hero
-   ============================================================ */
 
 .bd-stats-bar {
   display: flex;
@@ -784,10 +748,6 @@ body.dark .bd-toast {
   letter-spacing: 0.06em;
   text-align: center;
 }
-
-/* ============================================================
-   IMAGE GALLERY STRIP — 3 images in a row below cover
-   ============================================================ */
 
 .bd-gallery-section {
   background: var(--bg);
@@ -835,10 +795,6 @@ body.dark .bd-toast {
 @media (max-width: 1024px) {
   .bd-gallery-section { padding-block: 32px 0; }
 }
-
-/* ============================================================
-   KEY TAKEAWAYS BOX — checklist block inside article
-   ============================================================ */
 
 .bd-key-takeaways {
   background: linear-gradient(135deg, var(--tint) 0%, var(--surface) 100%);
@@ -902,9 +858,6 @@ body.dark .bd-toast {
   flex: none;
 }
 
-/* ============================================================
-   SUPPLIES / TOOLS GRID
-   ============================================================ */
 
 .bd-supplies-section {
   background: var(--surface-alt);
@@ -979,9 +932,6 @@ body.dark .bd-toast {
   line-height: 1.45;
 }
 
-/* ============================================================
-   DUAL SIDE-BY-SIDE IMAGES inside sections
-   ============================================================ */
 
 .bd-dual-img {
   display: grid;
@@ -1014,9 +964,6 @@ body.dark .bd-toast {
   background: var(--surface);
 }
 
-/* ============================================================
-   FACT CHIP ROW
-   ============================================================ */
 
 .bd-fact-row {
   display: flex;
@@ -1042,9 +989,6 @@ body.dark .bd-toast {
   font-size: 0.85rem;
 }
 
-/* ============================================================
-   WARNING / NOTE BOX
-   ============================================================ */
 
 .bd-warn-box {
   background: rgba(193,101,45,0.08);
@@ -1062,9 +1006,6 @@ body.dark .bd-toast {
 .bd-warn-icon { color: var(--accent); font-size: 1.1rem; flex: none; margin-top: 2px; }
 .bd-warn-box p { font-size: 0.9rem; color: var(--ink-muted); line-height: 1.6; }
 
-/* ============================================================
-   EXTRA INLINE IMAGE with tall aspect
-   ============================================================ */
 .bd-tall-img-wrap {
   margin: 36px 0;
   border-radius: 18px;
@@ -1092,11 +1033,115 @@ body.dark .bd-toast {
   text-align: center;
 }
 
-/* ============================================================
-   SECTION DIVIDER
-   ============================================================ */
 .bd-section-divider {
   border: none;
   border-top: 2px dashed var(--border);
   margin: 44px 0;
+}
+
+.bd-final-cta-section{
+  padding: 90px 0 110px;
+}
+
+.bd-final-cta-box{
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 64px 48px;
+  border-radius: var(--radius-lg);
+  text-align: center;
+  background: linear-gradient(150deg, var(--accent-deep) 0%, var(--accent) 55%, var(--accent-deep) 100%);
+  box-shadow: var(--shadow-card);
+}
+
+.bd-final-cta-box::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(255,255,255,0.16) 0%, transparent 45%),
+    radial-gradient(circle at 88% 82%, rgba(255,255,255,0.12) 0%, transparent 42%);
+}
+
+.bd-final-cta-eyebrow{
+  color: rgba(255,248,239,0.92);
+  justify-content: center;
+}
+.bd-final-cta-eyebrow::before{ color: #FFF8EF; }
+.bd-final-cta-eyebrow i{ color: #FFF8EF; font-size: 0.85rem; }
+
+.bd-final-cta-heading{
+  font-family: var(--display);
+  color: #FFF8EF;
+  font-size: clamp(1.9rem, 3.4vw, 2.6rem);
+  line-height: 1.2;
+  margin: 18px auto 16px;
+  max-width: 24ch;
+}
+.bd-final-cta-heading em{
+  font-style: italic;
+  color: var(--surface);
+}
+
+.bd-final-cta-text{
+  max-width: 52ch;
+  margin: 0 auto 34px;
+  color: rgba(255,248,239,0.86);
+  line-height: 1.75;
+  font-size: 1rem;
+}
+
+.bd-final-cta-buttons{
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.bd-final-cta-buttons .btn-primary{
+  background: #FFF8EF;
+  color: var(--accent-deep);
+}
+.bd-final-cta-buttons .btn-primary:hover{
+  background: var(--surface);
+  color: var(--accent-deep);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.2);
+}
+.bd-final-cta-buttons .btn-outline{
+  border-color: rgba(255,248,239,0.55);
+  color: #FFF8EF;
+}
+.bd-final-cta-buttons .btn-outline:hover{
+  background: rgba(255,248,239,0.14);
+  border-color: #FFF8EF;
+}
+
+.bd-final-cta-note{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  padding-top: 28px;
+  border-top: 1px solid rgba(255,248,239,0.25);
+}
+.bd-final-cta-note span{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: rgba(255,248,239,0.9);
+}
+.bd-final-cta-note i{ color: #FFF8EF; font-size: 0.9rem; }
+
+@media (max-width: 640px){
+  .bd-final-cta-section{ padding: 64px 0 72px; }
+  .bd-final-cta-box{ padding: 44px 24px; }
+  .bd-final-cta-buttons .btn{ width: 100%; justify-content: center; }
+  .bd-final-cta-note{ gap: 16px 22px; }
 }
