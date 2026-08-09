@@ -10,6 +10,7 @@
 
   --bg:#FBF3EA;
   --surface:#FFFFFF;
+  --surface-soft:#FDF9F2;
   --surface-alt:#F4E9DB;
   --border:rgba(36,28,22,0.12);
   --tint:rgba(193,101,45,0.08);
@@ -37,6 +38,7 @@ body.dark{
 
   --bg:#1B140E;
   --surface:#241B13;
+  --surface-soft:#211810;
   --surface-alt:#2D2118;
   --border:rgba(245,239,230,0.10);
   --tint:rgba(224,138,76,0.14);
@@ -82,6 +84,7 @@ body[dir="rtl"] .eyebrow{ letter-spacing:0; }
 .btn-primary:hover{transform:translateY(-2px);background:var(--accent-deep);box-shadow:0 10px 22px rgba(193,101,45,0.25);}
 .btn-outline{background:transparent;border-color:var(--ink);color:var(--ink);}
 .btn-outline:hover{background:var(--surface-alt);}
+.btn-sm{padding:9px 20px;font-size:0.84rem;}
 
 
 header{background:var(--surface);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;}
@@ -128,7 +131,7 @@ nav.wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;
 .nav-actions{display:flex;align-items:center;gap:10px;}
 .nav-signup{display:none;}
 .icon-btn{
-  width:38px;height:38px;border-radius:50%;flex:none;border:1px solid var(--border);background:var(--surface);
+  width:38px;height:38px;border-radius:50%;flex:none;border:1.5px solid var(--ink-faint);background:var(--surface);
   display:flex;align-items:center;justify-content:center;color:var(--ink-muted);font-size:0.9rem;cursor:pointer;
   transition:border-color .15s ease, color .15s ease, transform .2s ease;
 }
@@ -168,6 +171,8 @@ nav.wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;
 }
 .hero-badge strong{display:block;font-family:var(--display);color:var(--accent);font-size:1.15rem;font-style:italic;}
 .hero-badge span{display:block;font-size:0.84rem;color:var(--ink-muted);margin-top:4px;}
+
+#medium{background:var(--surface-soft);}
 
 
 section{padding:88px 0;}
@@ -226,9 +231,6 @@ section{padding:88px 0;}
 .seats-badge{font-weight:700;padding:4px 11px;border-radius:999px;background:var(--tint);color:var(--accent);font-size:0.76rem;}
 .seats-badge.low{background:rgba(200,70,60,0.10);color:#B5443A;}
 
-/* ============================================================
-   3) BEGINNER KIT BUNDLES
-   ============================================================ */
 .kit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
 .kit-card{
   background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);
@@ -350,7 +352,7 @@ footer{background:var(--surface-alt);border-top:1px solid var(--border);padding:
     background:
     linear-gradient(rgba(36,28,22,.78),
     rgba(36,28,22,.78)),
-    url("https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=1800&q=80");
+    url("images/cta.avif");
 
     background-size:cover;
 
@@ -563,7 +565,7 @@ body[dir="rtl"] .art-pricing-cta-buttons .btn{
 @media (max-width:1023px){
   .hero-grid{grid-template-columns:1fr;}
   .hero-visual{order:-1;max-width:460px;margin-inline:auto;width:100%;}
-  .hero-badge{position:static;margin-top:-30px;margin-inline:16px;max-width:none;}
+  .hero-badge{position:static;margin-top:16px;margin-inline:16px;max-width:none;}
   .medium-grid{grid-template-columns:1fr 1fr;}
   .workshop-grid{grid-template-columns:1fr 1fr;}
   .kit-grid{grid-template-columns:1fr 1fr;}
@@ -581,7 +583,6 @@ body[dir="rtl"] .art-pricing-cta-buttons .btn{
   .nav-links.mobile-open .nav-dropdown-menu{position:static;transform:none;opacity:1;pointer-events:auto;box-shadow:none;display:none;margin:2px 0 6px;padding-inline-start:12px;background:transparent;border:none;}
   .nav-links.mobile-open .nav-dropdown.open .nav-dropdown-menu{display:block;}
 
-  /* Sign Up moves inside the hamburger menu on mobile */
   .nav-actions .btn-primary{display:none;}
   .nav-signup{display:block;margin-top:16px;}
   .nav-links.mobile-open .nav-signup a{
@@ -600,18 +601,22 @@ body[dir="rtl"] .art-pricing-cta-buttons .btn{
   .form-row{grid-template-columns:1fr;}
   .footer-grid{grid-template-columns:1fr;}
   .contact-form{padding:24px;}
+
+  .footer-grid{text-align:center;}
+  .footer-brand{display:flex;flex-direction:column;align-items:center;}
+  .footer-brand p{margin-inline:auto;}
+  .footer-socials{justify-content:center;}
+  .footer-col{display:flex;flex-direction:column;align-items:center;}
+  .footer-bottom{justify-content:center;text-align:center;}
 }
 
 @media (max-width:480px){
 
-  /* Header: logo + icon buttons + Sign Up + hamburger all in one
-     row was overflowing on narrow phones — trim it down. */
   .logo-text .sub{display:none;}
   .nav-actions{gap:8px;}
   .logo-mark{width:36px;height:36px;font-size:0.95rem;}
   .logo-text .name{font-size:1.05rem;}
 
-  /* Hero */
   .hero{padding-block:36px 64px;}
   .hero-copy h1{max-width:none;}
   .hero-actions{flex-direction:column;align-items:stretch;gap:12px;}
@@ -620,26 +625,20 @@ body[dir="rtl"] .art-pricing-cta-buttons .btn{
   .hero-badge{margin-inline:10px;padding:16px 18px;}
   .hero-badge strong{font-size:1.02rem;}
 
-  /* Section heading rhythm */
   .section-head{margin-bottom:34px;}
 
-  /* Kit cards: price + button can get tight on very narrow cards */
   .kit-card{padding:22px;}
   .kit-price-row{flex-wrap:wrap;}
   .kit-price-row .btn{width:100%;}
 
-  /* Workshop meta row: date/time + seats badge */
   .workshop-meta{flex-wrap:wrap;row-gap:8px;}
   .workshop-body{padding:20px 18px 22px;}
 
-  /* Medium cards */
   .medium-body{padding:28px 18px 20px;}
 
-  /* Contact */
   .contact-form{padding:20px;}
   .contact-info li{font-size:0.88rem;}
 
-  /* Footer */
   .footer-bottom{flex-direction:column;text-align:center;gap:8px;}
 }
 

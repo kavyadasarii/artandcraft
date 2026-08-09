@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<link rel="stylesheet" href="service details.css">
+<link rel="stylesheet" href="servicedetails.css">
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 </head>
 <body>
@@ -30,7 +30,8 @@
           <i class="fa-solid fa-chevron-down"></i>
         </button>
         <ul class="nav-dropdown-menu">
-          <li><a href="../home2/home2.html">Home 2</a></li>
+          <li><a href="../index.html">Home Classic</a></li>
+          <li><a href="../home2/home2.html">Home Modern</a></li>
         </ul>
       </li>
       <li><a href="../about/about.html" >About Us</a></li>
@@ -38,13 +39,13 @@
       <li><a href="../pricing/pricing.html">pricing</a></li>
       <li><a href="../blog/blog.html">blog</a></li>
       <li><a href="../contact/contact 1.html">Contact</a></li>
-      <li class="nav-signup"><a href="signup.html" class="btn btn-primary">Sign Up</a></li>
+      <li class="nav-signup"><a href="../signup/login.html" class="btn btn-primary">Login</a></li>
     </ul>
 
     <div class="nav-actions">
       <button class="icon-btn" id="langToggle" aria-label="Toggle text direction" type="button"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
       <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode" type="button"><i class="fa-solid fa-sun"></i></button>
-      <a href="signup.html" class="btn btn-primary">Sign Up</a>
+      <a href="../signup/login.html" class="btn btn-primary btn-sm">Login</a>
       <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
     </div>
   </nav>
@@ -127,53 +128,39 @@
   
 <section class="art-pricing-cta-section">
 
+    <div class="art-pricing-cta-bg">
+        <img src="images/cta-details.jpg" alt="Artist's workspace with paint palette and brushes in warm studio light">
+        <div class="art-pricing-cta-overlay"></div>
+    </div>
+
     <div class="wrap">
 
-        <div class="art-pricing-cta-box">
+        <div class="art-pricing-cta-content reveal">
 
-            <span class="eyebrow">
-                <i data-lucide="palette"></i>
-                Start Your Creative Journey
+            <span class="eyebrow" id="cta-eyebrow">
+                <i class="fa-solid fa-palette"></i>
+                Ready when you are
             </span>
 
-            <h2>
-                Ready to <span>Unleash Your Creativity</span>?
+            <h2 id="cta-heading">
+                Need something wrapped today?
             </h2>
 
-            <p>
-                Explore premium art supplies, join inspiring workshops, and enjoy exclusive member benefits. Everything you need to create your next masterpiece is waiting for you.
+            <p id="cta-desc">
+                Bring it to the counter, or tell us what you're celebrating and we'll build a hamper.
             </p>
 
             <div class="art-pricing-cta-buttons">
 
-                <a href="#" class="btn btn-primary">
-                    <i data-lucide="shopping-bag"></i>
-                    Shop Now
+                <a href="../contact/contact 1.html" class="btn btn-primary">
+                    <i class="fa-solid fa-comments"></i>
+                    Talk to the studio
                 </a>
 
-                <a href="#" class="btn btn-outline">
-                    <i data-lucide="calendar-days"></i>
-                    View Workshops
+                <a href="service.html" class="btn btn-outline">
+                    <i class="fa-solid fa-list"></i>
+                    All services
                 </a>
-
-            </div>
-
-            <div class="art-pricing-cta-note">
-
-                <div>
-                    <i data-lucide="badge-check"></i>
-                    Premium Products
-                </div>
-
-                <div>
-                    <i data-lucide="truck"></i>
-                    Fast Delivery
-                </div>
-
-                <div>
-                    <i data-lucide="shield-check"></i>
-                    Secure Shopping
-                </div>
 
             </div>
 
@@ -253,7 +240,7 @@ const SERVICES = {
     eyebrow: "Custom framing",
     heading: 'Give your finished piece a <em>frame worth keeping</em>.',
     desc: "Bring in a painting, print, photo, or even a piece of needlework — we'll match a frame, mat, and glazing that suits it, cut and assembled in-house.",
-    heroImg: "https://images.pexels.com/photos/10322820/pexels-photo-10322820.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    heroImg: "images/hero-framing.jpg",
     heroAlt: "Wooden and metal picture frames in an art studio",
     chips: [
       { icon: "fa-clock", value: "5–7 days", label: "Typical turnaround" },
@@ -267,10 +254,10 @@ const SERVICES = {
       { icon: "fa-toolbox", title: "Hanging hardware", body: "Wire, D-rings, or a stand — fitted before pickup so it's ready to place the same day." }
     ],
     gallery: [
-      { img: "https://images.pexels.com/photos/8521987/pexels-photo-8521987.jpeg?auto=compress&cs=tinysrgb&w=600", alt: "Collection of framed artwork displayed on a wall", caption: "Gallery wall, 6 pieces" },
-      { img: "https://images.pexels.com/photos/5978722/pexels-photo-5978722.jpeg?auto=compress&cs=tinysrgb&w=600", alt: "Minimalist wooden and black frames on a light wooden table", caption: "Minimalist wood & black" },
-      { img: "https://images.pexels.com/photos/7877826/pexels-photo-7877826.jpeg?auto=compress&cs=tinysrgb&w=600", alt: "Cozy gallery wall of framed pictures", caption: "Warm gallery wall" },
-      { img: "https://images.pexels.com/photos/10322819/pexels-photo-10322819.jpeg?auto=compress&cs=tinysrgb&w=600", alt: "Aesthetic arrangement of wooden picture frames in a studio", caption: "Studio frame samples" }
+      { img: "images/gal-1.jpg", alt: "Collection of framed artwork displayed on a wall", caption: "Gallery wall, 6 pieces" },
+      { img: "images/gal-2.jpg", alt: "Minimalist wooden and black frames on a light wooden table", caption: "Minimalist wood & black" },
+      { img: "images/gal-3.jpg", alt: "Cozy gallery wall of framed pictures", caption: "Warm gallery wall" },
+      { img: "images/gal-4.jpg", alt: "Aesthetic arrangement of wooden picture frames in a studio", caption: "Studio frame samples" }
     ],
     pricingNote: 'Final price depends on size — these starting rates cover a standard 12"×16" piece.',
     pricing: [
@@ -293,7 +280,7 @@ const SERVICES = {
     eyebrow: "Canvas printing",
     heading: 'Turn any image into <em>gallery-ready canvas</em>.',
     desc: "Send us a digital file or a finished print and we'll stretch it onto gallery-grade canvas, any size — ready to hang, no frame required.",
-    heroImg: "https://images.pexels.com/photos/8381889/pexels-photo-8381889.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    heroImg: "images/hero-canvas.jpg",
     heroAlt: "A blank white canvas on an easel",
     chips: [
       { icon: "fa-clock", value: "3–5 days", label: "Typical turnaround" },
@@ -328,7 +315,7 @@ const SERVICES = {
     eyebrow: "Workshops",
     heading: "Book the studio for a class that's <em>just yours</em>.",
     desc: "Private classes, team outings, or small group sessions in painting, drawing, sculpture, or craft — led by our in-house artists after hours.",
-    heroImg: "https://images.pexels.com/photos/8382222/pexels-photo-8382222.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    heroImg: "images/hero-class.jpg",
     heroAlt: "Students painting on canvas during a private art class",
     chips: [
       { icon: "fa-clock", value: "2 hrs", label: "Typical session" },
@@ -363,7 +350,7 @@ const SERVICES = {
     eyebrow: "Gift wrapping",
     heading: "Turn any purchase into a gift, <em>on the spot</em>.",
     desc: "Hand-wrapped at the counter, or built into a curated hamper with a card and ribbon — ready while you shop.",
-    heroImg: "https://images.pexels.com/photos/10520248/pexels-photo-10520248.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    heroImg: "images/hero-gift.jpg",
     heroAlt: "Beautifully wrapped gift boxes with ribbons",
     chips: [
       { icon: "fa-clock", value: "Same day", label: "Turnaround" },
@@ -398,7 +385,7 @@ const SERVICES = {
     eyebrow: "Bulk orders",
     heading: "Volume pricing for <em>schools, studios, and offices</em>.",
     desc: "A dedicated order contact, consistent stock, and pricing that scales for recurring supply runs.",
-    heroImg: "https://images.pexels.com/photos/16694634/pexels-photo-16694634.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    heroImg: "images/hero-retail.jpg",
     heroAlt: "Vibrant retail shelves of art supplies",
     chips: [
       { icon: "fa-file-invoice", value: "Net 15", label: "Billing for approved accounts" },
@@ -433,7 +420,7 @@ const SERVICES = {
     eyebrow: "Birthday parties",
     heading: "A craft party, <em>without the cleanup</em>.",
     desc: "A themed activity, all materials included, and mess handled by us — book a party for 6 to 15 kids.",
-    heroImg: "https://images.pexels.com/photos/33029296/pexels-photo-33029296.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    heroImg: "images/hero-kids.jpg",
     heroAlt: "Children painting together at an outdoor art class",
     chips: [
       { icon: "fa-clock", value: "90 min", label: "Typical session" },
@@ -534,7 +521,6 @@ function render() {
   document.getElementById("cta-heading").textContent = data.ctaHeading;
   document.getElementById("cta-desc").textContent = data.ctaDesc;
 
-  // Re-wire the FAQ accordion for the freshly-rendered questions
   document.querySelectorAll(".faq-question").forEach(btn => {
     btn.addEventListener("click", () => {
       btn.parentElement.classList.toggle("open");
@@ -545,7 +531,7 @@ function render() {
 document.addEventListener("DOMContentLoaded", render);
 </script>
 
-<script src="service details.js"></script>
+<script src="servicedetails.js"></script>
 
 </body>
 </html>
