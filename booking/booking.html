@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book a Workshop or Supply Pickup — ArtCraft Supply Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="booking.css">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <div class="topbar-actions">
+      <button class="icon-btn" id="langToggle" aria-label="Toggle text direction" type="button"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode" type="button"><i class="fa-solid fa-sun"></i></button>
+    </div>
+    <a href="../index.html" class="logo">
+      <span class="logo-mark"><i class="fa-solid fa-palette"></i></span>
+      <span class="logo-text">
+        <span class="name">Art<span>Craft</span></span>
+        <span class="sub">SUPPLY STUDIO</span>
+      </span>
+    </a>
+  </div>
+</header>
+
+<main>
+
+  <section class="booking-hero">
+    <div class="wrap booking-hero-inner">
+      <span class="eyebrow">Book a slot, Hyderabad</span>
+      <h1>Reserve a <em>workshop, class or supply pickup</em>.</h1>
+      <p>Tell us what you're making and what supplies you'll need — we'll set aside a table, your materials, and an instructor if you want one.</p>
+    </div>
+  </section>
+
+  <section class="booking-section">
+    <div class="wrap booking-grid">
+
+      <form class="booking-form" id="bookingForm" novalidate>
+
+        <div class="form-block">
+          <h3><i class="fa-solid fa-user"></i> Your details</h3>
+          <div class="form-row two">
+            <label class="field">
+              <span>Full name</span>
+              <input type="text" name="name" placeholder="Your name" required>
+            </label>
+            <label class="field">
+              <span>Phone number</span>
+              <input type="tel" name="phone" placeholder="+91 98765 43210" required>
+            </label>
+          </div>
+          <div class="form-row two">
+            <label class="field">
+              <span>Email address</span>
+              <input type="email" name="email" placeholder="you@example.com" required>
+            </label>
+            <label class="field">
+              <span>Number of people</span>
+              <input type="number" name="guests" min="1" max="12" value="1" required>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-block">
+          <h3><i class="fa-solid fa-calendar-check"></i> Booking details</h3>
+          <div class="form-row two">
+            <label class="field">
+              <span>What are you booking?</span>
+              <select name="bookingType" required>
+                <option value="" disabled selected>Choose one</option>
+                <option value="workshop">Guided workshop / class</option>
+                <option value="studio">Open studio table</option>
+                <option value="pickup">Supply pickup (order in advance)</option>
+                <option value="private">Private group session</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Preferred medium</span>
+              <select name="medium">
+                <option value="painting">Painting &amp; watercolor</option>
+                <option value="drawing">Drawing &amp; sketching</option>
+                <option value="pottery">Pottery &amp; clay</option>
+                <option value="diy">DIY &amp; hobby kits</option>
+                <option value="craft">General craft materials</option>
+              </select>
+            </label>
+          </div>
+          <div class="form-row two">
+            <label class="field">
+              <span>Preferred date</span>
+              <input type="date" name="date" required>
+            </label>
+            <label class="field">
+              <span>Preferred time slot</span>
+              <select name="time" required>
+                <option value="" disabled selected>Choose a slot</option>
+                <option value="morning">Morning · 10:00 – 12:00</option>
+                <option value="afternoon">Afternoon · 1:00 – 3:00</option>
+                <option value="evening">Evening · 4:00 – 6:00</option>
+                <option value="weekend">Weekend · 11:00 – 1:00</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-block">
+          <h3><i class="fa-solid fa-palette"></i> Supplies needed</h3>
+          <p class="form-block-note">Pick everything you'd like set aside or ready for pickup. We'll confirm availability by email.</p>
+          <div class="supply-grid" role="group" aria-label="Supplies needed">
+            <label class="supply-pill">
+              <input type="checkbox" name="supplies" value="paints">
+              <i class="fa-solid fa-palette"></i><span>Paints &amp; colors</span>
+            </label>
+            <label class="supply-pill">
+              <input type="checkbox" name="supplies" value="brushes">
+              <i class="fa-solid fa-paintbrush"></i><span>Brushes</span>
+            </label>
+            <label class="supply-pill">
+              <input type="checkbox" name="supplies" value="paper">
+              <i class="fa-solid fa-file"></i><span>Paper &amp; canvas</span>
+            </label>
+            <label class="supply-pill">
+              <input type="checkbox" name="supplies" value="drawing">
+              <i class="fa-solid fa-pencil"></i><span>Drawing tools</span>
+            </label>
+            <label class="supply-pill">
+              <input type="checkbox" name="supplies" value="clay">
+              <i class="fa-solid fa-hand-sparkles"></i><span>Clay &amp; pottery tools</span>
+            </label>
+            <label class="supply-pill">
+              <input type="checkbox" name="supplies" value="diy">
+              <i class="fa-solid fa-box-open"></i><span>DIY kit</span>
+            </label>
+            <label class="supply-pill">
+              <input type="checkbox" name="supplies" value="school">
+              <i class="fa-solid fa-book"></i><span>School supplies</span>
+            </label>
+            <label class="supply-pill">
+              <input type="checkbox" name="supplies" value="none">
+              <i class="fa-solid fa-ban"></i><span>I'll bring my own</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-block">
+          <h3><i class="fa-solid fa-comment"></i> Anything else?</h3>
+          <label class="field">
+            <span>Notes for the studio (optional)</span>
+            <textarea name="notes" rows="4" placeholder="Skill level, allergies, a project you have in mind..."></textarea>
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn-primary booking-submit"><i class="fa-solid fa-calendar-check"></i> Confirm booking</button>
+        <div class="form-success" id="bookingSuccess"><i class="fa-solid fa-circle-check"></i> Booking request sent — we'll confirm by email shortly.</div>
+      </form>
+
+      <aside class="booking-side">
+        <div class="booking-side-card">
+          <h4><i class="fa-solid fa-location-dot"></i> Visit the studio</h4>
+          <p>Road No. 12, Banjara Hills, Hyderabad, Telangana 500034</p>
+        </div>
+        <div class="booking-side-card">
+          <h4><i class="fa-solid fa-clock"></i> Studio hours</h4>
+          <p>Tue – Sun, 10:00 AM – 7:00 PM<br>Closed Mondays</p>
+        </div>
+        <div class="booking-side-card">
+          <h4><i class="fa-solid fa-circle-info"></i> Good to know</h4>
+          <p>Free cancellation up to 24 hours before your slot. Supplies are held for pickup for 48 hours.</p>
+        </div>
+        <div class="booking-side-card booking-side-contact">
+          <h4><i class="fa-solid fa-headset"></i> Need help booking?</h4>
+          <a href="tel:+919876543210"><i class="fa-solid fa-phone"></i> +91 98765 43210</a>
+          <a href="https://wa.me/919876543210" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp us</a>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+</main>
+
+<script src="booking.js"></script>
+
+</body>
+</html>

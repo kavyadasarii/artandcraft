@@ -46,7 +46,6 @@
     if(e.key === RTL_KEY){ applyDir(e.newValue === 'true'); }
   });
 
-  // ---- Shop dropdown ----
   document.querySelectorAll('.nav-dropdown > .nav-drop-btn').forEach(function(btn){
     btn.addEventListener('click', function(e){
       e.stopPropagation();
@@ -69,7 +68,6 @@
     });
   });
 
-  // ---- Mobile nav toggle ----
   var navToggle = document.querySelector('.nav-toggle');
   var navLinks = document.querySelector('.nav-links');
   function closeMobileNav(){

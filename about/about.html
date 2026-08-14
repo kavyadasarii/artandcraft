@@ -8,7 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <link rel="stylesheet" href="about.css">
-<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="icon" type="image/svg+xml" href="../favicon.svgs">
 </head>
 <body>
 
@@ -38,13 +38,13 @@
       <li><a href="../pricing/pricing.html">pricing</a></li>
       <li><a href="../blog/blog.html">blog</a></li>
       <li><a href="../contact/contact 1.html">Contact</a></li>
-      <li class="nav-signup"><a href="../signup/login.html" class="btn btn-primary">Login</a></li>
+      <li class="nav-signup"><a href="../booking/booking.html" class="btn btn-primary">Book now</a></li>
     </ul>
 
     <div class="nav-actions">
       <button class="icon-btn" id="langToggle" aria-label="Toggle text direction" type="button"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
       <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode" type="button"><i class="fa-solid fa-sun"></i></button>
-      <a href="../signup/login.html" class="btn btn-primary btn-sm">Login</a>
+      <a href="../booking/booking.html" class="btn btn-primary btn-sm">Book now</a>
       <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
     </div>
   </nav>
@@ -59,15 +59,27 @@
         <span class="eyebrow">Our story</span>
         <h1>Built for makers, <em>stocked with care</em>.</h1>
         <p>ArtCraft Supply Studio started as a single shelf of watercolors and a lot of stubbornness. Today it's a full shop on Road No. 12 — but the goal hasn't changed: give every maker in Hyderabad the supplies and the confidence to start.</p>
-        <div class="hero-stats">
-          <div class="stat"><b>2019</b><span>Founded</span></div>
-          <div class="stat"><b>1,200<span class="plus">+</span></b><span>Products stocked</span></div>
-          <div class="stat"><b>150<span class="plus">+</span></b><span>Workshops hosted</span></div>
+        <div class="about-hero-actions">
+          <a href="../home2/home2.html#featured-products" class="btn btn-primary"><i class="fa-solid fa-bag-shopping"></i> Shop the Studio</a>
+          <a href="#journey" class="btn btn-outline">Read Our Journey</a>
         </div>
       </div>
 
       <div class="about-hero-visual reveal">
-        <img src="images/hero-shop.jpg" alt="Vibrant shelves of art and craft supplies inside the ArtCraft Supply Studio shop">
+        <span class="hero-badge-discount">Since <b>2019</b><span>Hyderabad, Road No. 12</span></span>
+        <div class="about-hero-frame">
+          <img src="images/hero-shop.jpg" alt="Vibrant shelves of art and craft supplies inside the ArtCraft Supply Studio shop">
+        </div>
+        <div class="hero-float-card hero-float-rating">
+          <div class="hero-float-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <b>4.8 / 5</b>
+          <span>from 8,000+ makers</span>
+        </div>
+        <div class="hero-float-card hero-float-quote">
+          <i class="fa-solid fa-quote-left"></i>
+          <p>"Never feel behind on your first day."</p>
+          <span>— Ananya Rao, Founder</span>
+        </div>
       </div>
     </div>
   </section>
@@ -83,9 +95,9 @@
         <h2>Make starting a craft <em>less intimidating</em>.</h2>
         <p>Every product we stock and every workshop we run comes back to one question: does this help someone pick up a brush, some clay, or a needle for the first time? If the answer is no, we don't carry it.</p>
         <ul class="mission-features">
-          <li><i class="fa-solid fa-hand-holding-heart"></i> Staff who'll happily explain the difference between gouache and acrylic</li>
-          <li><i class="fa-solid fa-tags"></i> Fair pricing on beginner kits, not just professional-grade gear</li>
-          <li><i class="fa-solid fa-people-group"></i> Weekly workshops designed for people who've never tried the medium</li>
+          <li class="reveal"><i class="fa-solid fa-hand-holding-heart"></i> <span>Staff who'll happily explain the difference between gouache and acrylic</span></li>
+          <li class="reveal"><i class="fa-solid fa-tags"></i> <span>Fair pricing on beginner kits, not just professional-grade gear</span></li>
+          <li class="reveal"><i class="fa-solid fa-people-group"></i> <span>Weekly workshops designed for people who've never tried the medium</span></li>
         </ul>
       </div>
     </div>
@@ -150,6 +162,7 @@
         <div class="team-card reveal">
           <div class="team-photo">
             <img src="images/team-founder.jpg" alt="Portrait of ArtCraft's founder wearing an apron">
+            <div class="team-photo-overlay"><span>Started ArtCraft in 2019 with one shelf and a lot of stubbornness.</span></div>
           </div>
           <div class="team-info">
             <h4>Ananya Rao</h4>
@@ -164,6 +177,7 @@
         <div class="team-card reveal">
           <div class="team-photo">
             <img src="images/team-workshop.jpg" alt="Portrait of ArtCraft's workshop lead">
+            <div class="team-photo-overlay"><span>Runs every painting, pottery, and stitching workshop on the calendar.</span></div>
           </div>
           <div class="team-info">
             <h4>Karthik Iyer</h4>
@@ -178,6 +192,7 @@
         <div class="team-card reveal">
           <div class="team-photo">
             <img src="images/team-sourcing.jpg" alt="Portrait of ArtCraft's sourcing lead wearing an apron">
+            <div class="team-photo-overlay"><span>Hunts down brands you won't find on any other shelf in the city.</span></div>
           </div>
           <div class="team-info">
             <h4>Meher Fatima</h4>
@@ -192,6 +207,7 @@
         <div class="team-card reveal">
           <div class="team-photo">
             <img src="images/team-cx.jpg" alt="Portrait of ArtCraft's customer experience lead">
+            <div class="team-photo-overlay"><span>Makes sure every question gets a real answer, not a script.</span></div>
           </div>
           <div class="team-info">
             <h4>Suresh Patil</h4>
@@ -221,6 +237,7 @@
 
             
             <article class="testimonial-card reveal">
+                <i class="fa-solid fa-quote-right testimonial-quote-mark"></i>
 
                 <div class="stars">
                     <i class="fa-solid fa-star"></i>
@@ -249,6 +266,7 @@
 
             
             <article class="testimonial-card reveal">
+                <i class="fa-solid fa-quote-right testimonial-quote-mark"></i>
 
                 <div class="stars">
                     <i class="fa-solid fa-star"></i>
@@ -276,6 +294,7 @@
 
             
             <article class="testimonial-card reveal">
+                <i class="fa-solid fa-quote-right testimonial-quote-mark"></i>
 
                 <div class="stars">
                     <i class="fa-solid fa-star"></i>
@@ -302,6 +321,7 @@
             </article>
             
 <article class="testimonial-card reveal">
+                <i class="fa-solid fa-quote-right testimonial-quote-mark"></i>
 
     <div class="stars">
         <i class="fa-solid fa-star"></i>

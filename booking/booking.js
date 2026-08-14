@@ -24,6 +24,8 @@
     }
   }
 
+  // Shares the same storage keys as the rest of the site, so the
+  // theme/direction chosen here stays in sync with home2.html etc.
   applyTheme(localStorage.getItem(THEME_KEY) || 'light');
   applyDir(localStorage.getItem(RTL_KEY) === 'true');
 
@@ -46,18 +48,24 @@
     if(e.key === RTL_KEY){ applyDir(e.newValue === 'true'); }
   });
 
-  var revealEls = document.querySelectorAll('.reveal');
-  if('IntersectionObserver' in window && revealEls.length){
-    var observer = new IntersectionObserver(function(entries){
-      entries.forEach(function(entry){
-        if(entry.isIntersecting){
-          entry.target.classList.add('in-view');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
-    revealEls.forEach(function(el){ observer.observe(el); });
-  } else {
-    revealEls.forEach(function(el){ el.classList.add('in-view'); });
+  var form = document.getElementById('bookingForm');
+  var successMsg = document.getElementById('bookingSuccess');
+  if(form){
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var valid = Array.prototype.every.call(
+        form.querySelectorAll('[required]'),
+        function(field){ return field.checkValidity(); }
+      );
+      if(!valid){
+        form.reportValidity();
+        return;
+      }
+      successMsg.classList.add('show');
+      form.reset();
+      setTimeout(function(){ successMsg.classList.remove('show'); }, 6000);
+      successMsg.scrollIntoView({ behavior:'smooth', block:'nearest' });
+    });
   }
+
 })();
