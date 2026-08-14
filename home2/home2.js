@@ -46,7 +46,6 @@
     if(e.key === RTL_KEY){ applyDir(e.newValue === 'true'); }
   });
 
-  // ---- Shop dropdown ----
   document.querySelectorAll('.nav-dropdown > .nav-drop-btn').forEach(function(btn){
     btn.addEventListener('click', function(e){
       e.stopPropagation();
@@ -69,7 +68,6 @@
     });
   });
 
-  // ---- Mobile nav toggle ----
   var navToggle = document.querySelector('.nav-toggle');
   var navLinks = document.querySelector('.nav-links');
   function closeMobileNav(){
@@ -100,7 +98,6 @@
     });
   }
 
-  // ---- Scroll reveal ----
   var revealEls = document.querySelectorAll('.reveal');
   if('IntersectionObserver' in window && revealEls.length){
     var observer = new IntersectionObserver(function(entries){
@@ -116,7 +113,6 @@
     revealEls.forEach(function(el){ el.classList.add('in-view'); });
   }
 
-  // ---- Contact form (front-end only — wire to your email/CRM endpoint) ----
   var form = document.getElementById('contactForm');
   var successMsg = document.getElementById('formSuccess');
   if(form){
@@ -133,7 +129,35 @@
     });
   }
 
-  // ---- Newsletter form (front-end only — wire to your list provider) ----
+  var filterPills = document.querySelectorAll('.filter-pill');
+  var pfCards = document.querySelectorAll('.pf-card');
+  var noResults = document.getElementById('noResults');
+  function applyFilter(filter){
+    var visibleCount = 0;
+    pfCards.forEach(function(card){
+      var match = filter === 'all' || card.getAttribute('data-cat') === filter;
+      card.style.display = match ? '' : 'none';
+      if(match) visibleCount++;
+    });
+    if(noResults){ noResults.hidden = visibleCount !== 0; }
+  }
+  filterPills.forEach(function(pill){
+    pill.addEventListener('click', function(){
+      filterPills.forEach(function(p){ p.classList.remove('active'); });
+      pill.classList.add('active');
+      applyFilter(pill.getAttribute('data-filter'));
+    });
+  });
+  document.querySelectorAll('[data-filter-target]').forEach(function(link){
+    link.addEventListener('click', function(){
+      var target = link.getAttribute('data-filter-target');
+      filterPills.forEach(function(p){
+        p.classList.toggle('active', p.getAttribute('data-filter') === target);
+      });
+      applyFilter(target);
+    });
+  });
+
   var newsletterForm = document.getElementById('newsletterForm');
   var newsletterSuccess = document.getElementById('newsletterSuccess');
   if(newsletterForm){

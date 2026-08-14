@@ -39,13 +39,13 @@
       <li><a href="../pricing/pricing.html">pricing</a></li>
       <li><a href="../blog/blog.html">blog</a></li>
       <li><a href="../contact/contact 1.html" >Contact</a></li>
-      <li class="nav-signup"><a href="../signup/login.html" class="btn btn-primary">Login</a></li>
+      <li class="nav-signup"><a href="../booking/booking.html" class="btn btn-primary">Book now</a></li>
     </ul>
 
     <div class="nav-actions">
       <button class="icon-btn" id="langToggle" aria-label="Toggle text direction" type="button"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
       <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode" type="button"><i class="fa-solid fa-sun"></i></button>
-      <a href="../signup/login.html" class="btn btn-primary btn-sm">Login</a>
+      <a href="../booking/booking.html" class="btn btn-primary btn-sm">Book now</a>
       <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
     </div>
   </nav>
@@ -54,28 +54,59 @@
 <main>
 
   
-  <section class="hero2">
-    <div class="hero2-bg">
-      <img src="images/hero-shop.jpg" alt="Vibrant shelves of art supplies inside the ArtCraft Supply Studio shop">
-      <div class="hero2-overlay"></div>
-    </div>
-    <div class="wrap hero2-inner">
-      <div class="hero2-content reveal">
-        <span class="eyebrow">Art &amp; Craft Supplies, Hyderabad</span>
-        <h1>Come for supplies, <em>stay for the making</em>.</h1>
-        <p>Every shelf, every workshop, every beginner kit — built around one idea: you should never feel behind on your first day.</p>
-        <div class="hero2-actions">
-          <a href="index.html#medium" class="btn btn-primary"><i class="fa-solid fa-bag-shopping"></i> Shop All Supplies</a>
-          <a href="index.html#workshops" class="btn btn-outline">Browse Workshops</a>
+  <section class="hero-premium">
+    <div class="wrap hero-premium-inner">
+      <div class="hero-premium-copy reveal">
+        <span class="eyebrow">Premium Art &amp; Craft Marketplace, Hyderabad</span>
+        <h1>Craft your <em>next masterpiece</em> with premium supplies.</h1>
+        <p>1,200+ curated products across paints, tools, paper and hobby kits — hand-picked for artists, students and first-timers alike. Order online, dispatched the same week.</p>
+
+        <form class="hero-search" role="search" onsubmit="return false;">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search paints, brushes, canvas, kits...">
+          <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+
+        <div class="hero-premium-chips">
+          <a href="#featured-products" class="hero-chip" data-filter-target="paints"><i class="fa-solid fa-palette"></i> Paints</a>
+          <a href="#featured-products" class="hero-chip" data-filter-target="brushes"><i class="fa-solid fa-paintbrush"></i> Brushes</a>
+          <a href="#featured-products" class="hero-chip" data-filter-target="drawing"><i class="fa-solid fa-pencil"></i> Drawing</a>
+          <a href="#featured-products" class="hero-chip" data-filter-target="diy"><i class="fa-solid fa-box-open"></i> DIY Kits</a>
+          <a href="#featured-products" class="hero-chip" data-filter-target="all">All categories <i class="fa-solid fa-arrow-right"></i></a>
         </div>
-        <div class="hero2-tags">
-          <span class="hero2-tag"><i class="fa-solid fa-paintbrush"></i> Painting</span>
-          <span class="hero2-tag"><i class="fa-solid fa-pencil"></i> Drawing</span>
-          <span class="hero2-tag"><i class="fa-solid fa-hand"></i> Sculpting</span>
-          <span class="hero2-tag"><i class="fa-solid fa-scissors"></i> Crafting</span>
-          <span class="hero2-tag"><i class="fa-solid fa-chalkboard-user"></i> Workshops</span>
+
+        <div class="hero-premium-trust">
+          <div class="trust-item"><i class="fa-solid fa-truck-fast"></i> Free delivery over ₹999</div>
+          <div class="trust-item"><i class="fa-solid fa-rotate-left"></i> 14-day easy returns</div>
+          <div class="trust-item"><i class="fa-solid fa-shield-halved"></i> 100% secure checkout</div>
         </div>
       </div>
+
+      <div class="hero-premium-visual reveal">
+        <span class="hero-badge-discount">Up to <b>30% OFF</b><span>this week only</span></span>
+        <div class="hero-premium-frame">
+          <img src="images/hero-premium-main.jpg" alt="Premium art and craft supplies styled on a studio table">
+        </div>
+        <div class="hero-float-card hero-float-rating">
+          <div class="hero-float-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <b>4.8 / 5</b>
+          <span>from 8,000+ makers</span>
+        </div>
+        <div class="hero-float-card hero-float-product">
+          <img src="images/hero-premium-product.jpg" alt="Artisan watercolor paint set">
+          <div>
+            <span>Artisan Watercolor Set</span>
+            <b>₹1,499</b>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap hero-premium-stats">
+      <div class="stat"><b>1,200<span class="plus">+</span></b><span>Premium products</span></div>
+      <div class="stat"><b>8,000<span class="plus">+</span></b><span>Happy makers</span></div>
+      <div class="stat"><b>4.8 <i class="fa-solid fa-star" style="font-size:0.85rem;"></i></b><span>Average rating</span></div>
+      <div class="stat"><b>Same-week</b><span>Dispatch over ₹999</span></div>
     </div>
   </section>
 
@@ -114,52 +145,172 @@
     </div>
   </section>
 
-  <section id="explore">
+  <section id="featured-products" class="featured-products">
     <div class="wrap">
       <div class="section-head center reveal">
-        <span class="eyebrow">Explore by craft</span>
-        <h2>Pick a medium, <em>start scrolling</em>.</h2>
-        <p>A quick look at what's waiting on each shelf.</p>
+        <span class="eyebrow">Featured picks</span>
+        <h2>Top products, <em>every category</em>.</h2>
+        <p>Filter by category and add straight to your cart — or buy now for same-week dispatch.</p>
       </div>
 
-      <div class="craft-scroll">
-        <div class="craft-card reveal">
-          <img src="images/craft-painting.jpg" alt="Paintbrushes and acrylic paint tubes">
-          <div class="craft-card-overlay">
-            <h3>Painting</h3>
-            <span>Shop the shelf <i class="fa-solid fa-arrow-right"></i></span>
+      <div class="filter-pills reveal" role="tablist">
+        <button class="filter-pill active" type="button" data-filter="all">All</button>
+        <button class="filter-pill" type="button" data-filter="paints">Paints &amp; Colors</button>
+        <button class="filter-pill" type="button" data-filter="brushes">Brushes</button>
+        <button class="filter-pill" type="button" data-filter="drawing">Drawing &amp; Sketching</button>
+        <button class="filter-pill" type="button" data-filter="paper">Paper &amp; Canvas</button>
+        <button class="filter-pill" type="button" data-filter="craft">Craft Materials</button>
+        <button class="filter-pill" type="button" data-filter="diy">DIY &amp; Hobby Kits</button>
+        <button class="filter-pill" type="button" data-filter="school">School Supplies</button>
+        <button class="filter-pill" type="button" data-filter="tools">Art Tools</button>
+      </div>
+
+      <div class="pf-grid" id="productGrid">
+        <div class="pf-card reveal" data-cat="paints">
+          <div class="pf-media">
+            <img src="images/product-watercolor.jpg" alt="Artisan watercolor paint set with palette">
+            <span class="pf-badge">Bestseller</span>
+            <button class="pf-wishlist" aria-label="Save to wishlist" type="button"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <div class="pf-body">
+            <span class="pf-cat-label">Paints &amp; Colors</span>
+            <h4>Artisan Watercolor Set — 24 Pans</h4>
+            <div class="pf-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i> <span>4.6 (214)</span></div>
+            <div class="pf-price-row"><span class="pf-price">₹1,499</span><span class="pf-price-old">₹1,799</span></div>
+            <div class="pf-actions">
+              <button class="btn btn-outline btn-sm" type="button"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+              <a class="btn btn-primary btn-sm" href="../contact/contact 1.html">Buy Now</a>
+            </div>
           </div>
         </div>
-        <div class="craft-card reveal">
-          <img src="images/craft-drawing.jpg" alt="Sketchbook with graphite pencils and a blending stump">
-          <div class="craft-card-overlay">
-            <h3>Drawing</h3>
-            <span>Shop the shelf <i class="fa-solid fa-arrow-right"></i></span>
+
+        <div class="pf-card reveal" data-cat="brushes">
+          <div class="pf-media">
+            <img src="images/product-brushes.jpg" alt="Studio-grade round and flat paintbrush set in a roll case">
+            <span class="pf-badge">New</span>
+            <button class="pf-wishlist" aria-label="Save to wishlist" type="button"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <div class="pf-body">
+            <span class="pf-cat-label">Brushes</span>
+            <h4>Studio Brush Roll — 12 Piece Set</h4>
+            <div class="pf-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> <span>4.9 (156)</span></div>
+            <div class="pf-price-row"><span class="pf-price">₹749</span></div>
+            <div class="pf-actions">
+              <button class="btn btn-outline btn-sm" type="button"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+              <a class="btn btn-primary btn-sm" href="../contact/contact 1.html">Buy Now</a>
+            </div>
           </div>
         </div>
-        <div class="craft-card reveal">
-          <img src="images/craft-sculpting.jpg" alt="Hands shaping a clay pot">
-          <div class="craft-card-overlay">
-            <h3>Sculpting</h3>
-            <span>Shop the shelf <i class="fa-solid fa-arrow-right"></i></span>
+
+        <div class="pf-card reveal" data-cat="drawing">
+          <div class="pf-media">
+            <img src="images/product-pencils.jpg" alt="Professional sketch pencil kit with sketchbook">
+            <span class="pf-badge">Bestseller</span>
+            <button class="pf-wishlist" aria-label="Save to wishlist" type="button"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <div class="pf-body">
+            <span class="pf-cat-label">Drawing &amp; Sketching</span>
+            <h4>Professional Sketch Pencil Kit</h4>
+            <div class="pf-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> <span>5.0 (167)</span></div>
+            <div class="pf-price-row"><span class="pf-price">₹899</span><span class="pf-price-old">₹1,099</span></div>
+            <div class="pf-actions">
+              <button class="btn btn-outline btn-sm" type="button"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+              <a class="btn btn-primary btn-sm" href="../contact/contact 1.html">Buy Now</a>
+            </div>
           </div>
         </div>
-        <div class="craft-card reveal">
-          <img src="images/craft-crafting.jpg" alt="Crafting tools including tape and ribbons">
-          <div class="craft-card-overlay">
-            <h3>Crafting</h3>
-            <span>Shop the shelf <i class="fa-solid fa-arrow-right"></i></span>
+
+        <div class="pf-card reveal" data-cat="paper">
+          <div class="pf-media">
+            <img src="images/product-canvas.jpg" alt="Stack of pre-primed stretched canvases">
+            <button class="pf-wishlist" aria-label="Save to wishlist" type="button"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <div class="pf-body">
+            <span class="pf-cat-label">Paper &amp; Canvas</span>
+            <h4>Pre-Primed Canvas — Pack of 3</h4>
+            <div class="pf-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i> <span>4.5 (88)</span></div>
+            <div class="pf-price-row"><span class="pf-price">₹649</span></div>
+            <div class="pf-actions">
+              <button class="btn btn-outline btn-sm" type="button"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+              <a class="btn btn-primary btn-sm" href="../contact/contact 1.html">Buy Now</a>
+            </div>
           </div>
         </div>
-        <div class="craft-card reveal">
-          <img src="images/craft-fiber.jpg" alt="Vibrant shelves of multi-colored yarn rolls">
-          <div class="craft-card-overlay">
-            <h3>Fiber &amp; Yarn</h3>
-            <span>Shop the shelf <i class="fa-solid fa-arrow-right"></i></span>
+
+        <div class="pf-card reveal" data-cat="craft">
+          <div class="pf-media">
+            <img src="images/product-craft-box.jpg" alt="Mixed-media craft box with fabric, ribbon and paper">
+            <span class="pf-badge">Popular</span>
+            <button class="pf-wishlist" aria-label="Save to wishlist" type="button"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <div class="pf-body">
+            <span class="pf-cat-label">Craft Materials</span>
+            <h4>Mixed-Media Craft Box</h4>
+            <div class="pf-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> <span>4.7 (121)</span></div>
+            <div class="pf-price-row"><span class="pf-price">₹699</span><span class="pf-price-old">₹949</span></div>
+            <div class="pf-actions">
+              <button class="btn btn-outline btn-sm" type="button"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+              <a class="btn btn-primary btn-sm" href="../contact/contact 1.html">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pf-card reveal" data-cat="diy">
+          <div class="pf-media">
+            <img src="images/product-diy-kit.jpg" alt="Boxed DIY terrarium hobby kit with all included materials">
+            <span class="pf-badge">New</span>
+            <button class="pf-wishlist" aria-label="Save to wishlist" type="button"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <div class="pf-body">
+            <span class="pf-cat-label">DIY &amp; Hobby Kits</span>
+            <h4>Weekend Terrarium DIY Kit</h4>
+            <div class="pf-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i> <span>4.6 (73)</span></div>
+            <div class="pf-price-row"><span class="pf-price">₹899</span></div>
+            <div class="pf-actions">
+              <button class="btn btn-outline btn-sm" type="button"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+              <a class="btn btn-primary btn-sm" href="../contact/contact 1.html">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pf-card reveal" data-cat="school">
+          <div class="pf-media">
+            <img src="images/product-school-kit.jpg" alt="Complete school art supply kit with crayons and notebooks">
+            <span class="pf-badge">Bestseller</span>
+            <button class="pf-wishlist" aria-label="Save to wishlist" type="button"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <div class="pf-body">
+            <span class="pf-cat-label">School Art Supplies</span>
+            <h4>Complete School Art Kit</h4>
+            <div class="pf-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> <span>4.8 (302)</span></div>
+            <div class="pf-price-row"><span class="pf-price">₹549</span><span class="pf-price-old">₹699</span></div>
+            <div class="pf-actions">
+              <button class="btn btn-outline btn-sm" type="button"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+              <a class="btn btn-primary btn-sm" href="../contact/contact 1.html">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pf-card reveal" data-cat="tools">
+          <div class="pf-media">
+            <img src="images/product-easel.jpg" alt="Tabletop wooden easel with blank canvases">
+            <span class="pf-badge">Bestseller</span>
+            <button class="pf-wishlist" aria-label="Save to wishlist" type="button"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <div class="pf-body">
+            <span class="pf-cat-label">Art Tools</span>
+            <h4>Tabletop Easel + Canvas Bundle</h4>
+            <div class="pf-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> <span>4.9 (142)</span></div>
+            <div class="pf-price-row"><span class="pf-price">₹2,199</span></div>
+            <div class="pf-actions">
+              <button class="btn btn-outline btn-sm" type="button"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+              <a class="btn btn-primary btn-sm" href="../contact/contact 1.html">Buy Now</a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="craft-scroll-hint reveal"><span>Scroll for more</span> <i class="fa-solid fa-arrow-right"></i></div>
+
+      <p class="pf-empty" id="noResults" hidden>No products in this category yet — check back soon.</p>
     </div>
   </section>
 
@@ -167,8 +318,8 @@
   <section class="bestsellers" id="bestsellers">
     <div class="wrap">
       <div class="section-head center reveal">
-        <span class="eyebrow">Shop the shelf</span>
-        <h2>Our <em>bestsellers</em> this month.</h2>
+        <span class="eyebrow">Regulars' favorites</span>
+        <h2>Reordered <em>again and again</em>.</h2>
         <p>The kits and tools our regulars keep coming back for.</p>
       </div>
 
