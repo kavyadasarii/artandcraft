@@ -52,12 +52,10 @@
 
 <main>
 
-  
+  <!-- Blog Hero Section (Split Layout: Left Content, Right Image) -->
   <section class="blog-hero">
-    <img src="images/blog-hero.jpg" alt="Watercolor paints and brushes laid out on a studio table" class="blog-hero-bg">
-    <div class="blog-hero-scrim"></div>
-    <div class="wrap blog-hero-inner">
-      <div class="blog-hero-text reveal">
+    <div class="wrap blog-hero-wrap">
+      <div class="blog-hero-content reveal">
         <span class="eyebrow">From the studio</span>
         <h1>Notes, tips, and <em>things worth making</em>.</h1>
         <p>Beginner guides, medium comparisons, and the occasional look behind the counter — written by the people who stock the shelves. Whether you're picking up a brush for the first time or restocking for your tenth project, there's something here for you.</p>
@@ -74,32 +72,40 @@
           <a href="#posts" class="blog-hero-tag"><i class="fa-solid fa-scissors"></i> Crafting</a>
           <a href="#posts" class="blog-hero-tag"><i class="fa-solid fa-people-group"></i> Workshops</a>
         </div>
+      </div>
 
+      <div class="blog-hero-image-wrap reveal">
+        <div class="blog-hero-image-card">
+          <img src="images/children-painting-hero.png" alt="Children painting colorful artwork on canvas in an art studio" class="blog-hero-img">
+          <div class="blog-hero-badge">
+            <i class="fa-solid fa-palette"></i> Studio Workshop
+          </div>
+        </div>
       </div>
     </div>
   </section>
-  </section>
 
   
-  <section>
+  <!-- Featured Post -->
+  <section class="blog-featured-section">
     <div class="wrap">
-      <a href="blog details.html?post=watercolor-beginners" class="featured-post reveal">
+      <a href="blog_details.html?post=watercolor-beginners" class="featured-post reveal">
         <div class="featured-photo">
           <span class="featured-tag">Featured</span>
-          <img src="images/blog-featured.jpg" alt="A colorful array of watercolor paints and brushes">
+          <img src="images/blog-featured-art.png" alt="Artist painting watercolor artwork with fine detail paintbrushes and vibrant palette">
         </div>
         <div class="featured-body">
           <div class="featured-meta"><span>Painting</span><span>Jul 18, 2026</span><span>6 min read</span></div>
-          <h2>Watercolor for Absolute Beginners: 5 Mistakes to Avoid</h2>
-          <p>From overworking your paper to buying the wrong brush first — the small fixes that make your first few paintings look far less frustrating.</p>
+          <h2>Watercolor Mastery for Artists: Layering, Pigments &amp; Brushwork Techniques</h2>
+          <p>Discover how to control water flow, mix vibrant artist-grade pigments, and master delicate washes to elevate your watercolor artwork from beginner sketches to breathtaking studio paintings.</p>
           <span class="featured-link">Read the guide <i class="fa-solid fa-arrow-right"></i></span>
         </div>
       </a>
     </div>
   </section>
 
-  
-  <section id="posts">
+  <!-- All Posts Grid -->
+  <section id="posts" class="blog-posts-section">
     <div class="wrap">
       <div class="section-head center reveal">
         <span class="eyebrow">All posts</span>
@@ -108,89 +114,93 @@
 
       <div class="blog-filter-row reveal">
         <button type="button" class="chip active" data-filter="all">All</button>
-        <button type="button" class="chip" data-filter="painting">Painting</button>
-        <button type="button" class="chip" data-filter="drawing">Drawing</button>
-        <button type="button" class="chip" data-filter="sculpting">Sculpting</button>
-        <button type="button" class="chip" data-filter="crafting">Crafting</button>
-        <button type="button" class="chip" data-filter="workshops">Workshops</button>
+        <button type="button" class="chip" data-filter="paints">Paints &amp; Colors</button>
+        <button type="button" class="chip" data-filter="brushes">Brushes</button>
+        <button type="button" class="chip" data-filter="drawing">Drawing &amp; Sketching</button>
+        <button type="button" class="chip" data-filter="paper-canvas">Paper &amp; Canvas</button>
       </div>
 
       <div class="blog-grid" id="blogGrid">
-        <a href="blog details.html?post=colored-pencils" class="blog-card reveal" data-category="drawing">
+        <!-- Card 1: Drawing & Sketching -->
+        <a href="blog_details.html?post=colored-pencils" class="blog-card reveal" data-category="drawing">
           <div class="blog-photo">
-            <img src="images/post-pencils.jpg" alt="Colorful pencils arranged for drawing">
-            <span class="blog-cat-tag">Drawing</span>
+            <img src="images/blog-drawing-art.png" alt="Drawing and sketching artwork session with graphite pencils and charcoal">
+            <span class="blog-cat-tag">Drawing &amp; Sketching</span>
           </div>
           <div class="blog-body">
             <div class="blog-meta">Jul 12, 2026 · 4 min read</div>
-            <h3>Choosing Your First Set of Colored Pencils</h3>
-            <p>Wax-based or oil-based? Tin of 12 or tin of 36? Here's what actually matters for a beginner.</p>
+            <h3>Drawing &amp; Sketching: Mastering Graphite &amp; Charcoal Shading</h3>
+            <p>From light values to dark shadows, explore cross-hatching, blending stumps, and charcoal techniques for lifelike portrait and landscape sketching.</p>
             <span class="blog-link">Read more <i class="fa-solid fa-arrow-right"></i></span>
           </div>
         </a>
 
-        <a href="blog details.html?post=air-dry-clay" class="blog-card reveal" data-category="sculpting">
+        <!-- Card 2: Paper Arts -->
+        <a href="blog_details.html?post=paper-arts" class="blog-card reveal" data-category="paper-canvas">
           <div class="blog-photo">
-            <img src="images/post-clay.jpg" alt="Hands shaping a clay pot">
-            <span class="blog-cat-tag">Sculpting</span>
+            <img src="images/blog-paper-art.png" alt="Vibrant paper arts quilling and origami 3D paper craft art">
+            <span class="blog-cat-tag">Paper &amp; Canvas</span>
           </div>
           <div class="blog-body">
             <div class="blog-meta">Jul 5, 2026 · 5 min read</div>
-            <h3>Air-Dry vs. Polymer Clay: Which Should You Start With?</h3>
-            <p>No kiln, no oven, no problem — but each type has trade-offs worth knowing before you buy a block.</p>
+            <h3>Paper Arts &amp; Quilling: Crafting 3D Sculptural Paper Masterpieces</h3>
+            <p>Transform heavy cardstock, handmade origami sheets, and textured paper into delicate 3D paper sculptures, quilled floral art, and embossed paper designs.</p>
             <span class="blog-link">Read more <i class="fa-solid fa-arrow-right"></i></span>
           </div>
         </a>
 
-        <a href="blog details.html?post=fabric-scraps" class="blog-card reveal" data-category="crafting">
+        <!-- Card 3: Canvas Selection -->
+        <a href="blog_details.html?post=canvas-priming" class="blog-card reveal" data-category="paper-canvas">
           <div class="blog-photo">
-            <img src="images/post-wrap.jpg" alt="Crafting tools including tape and ribbons">
-            <span class="blog-cat-tag">Crafting</span>
+            <img src="images/blog-canvas-art.png" alt="Artist preparing and priming stretched linen canvas on easel with gesso">
+            <span class="blog-cat-tag">Paper &amp; Canvas</span>
           </div>
           <div class="blog-body">
-            <div class="blog-meta">Jun 28, 2026 · 3 min read</div>
-            <h3>5 Ways to Use Leftover Fabric Scraps for crafting</h3>
-            <p> Turn leftover fabric scraps into beautiful and practical creations. every piece can become something special.
-</p>
+            <div class="blog-meta">Jun 28, 2026 · 4 min read</div>
+            <h3>Paper &amp; Canvas Selection: Priming, Gesso &amp; Surface Textures</h3>
+            <p>Learn how paper GSM weights, cold-pressed textures, and triple-gessoed linen canvases affect paint absorption, vibrancy, and longevity.</p>
             <span class="blog-link">Read more <i class="fa-solid fa-arrow-right"></i></span>
           </div>
         </a>
 
-        <a href="blog details.html?post=pottery-workshop" class="blog-card reveal" data-category="workshops">
+        <!-- Card 4: Brushes & Palette Knives -->
+        <a href="blog_details.html?post=brushes-palette-knives" class="blog-card reveal" data-category="brushes">
           <div class="blog-photo">
-            <img src="images/post-workshop.jpg" alt="Students painting on canvas during a workshop">
-            <span class="blog-cat-tag">Workshops</span>
+            <img src="images/blog-brushes-art.png" alt="Selection of fine artist paintbrushes and palette knives with textured acrylic paints">
+            <span class="blog-cat-tag">Brushes</span>
           </div>
           <div class="blog-body">
             <div class="blog-meta">Jun 20, 2026 · 4 min read</div>
-            <h3>What to Expect at Your First Pottery Workshop</h3>
-            <p>From what to wear to how messy it actually gets — a walkthrough for first-timers who are nervous to book.</p>
+            <h3>Brushes &amp; Palette Knives: Master Brush Strokes &amp; Impasto Textures</h3>
+            <p>Discover which brush shapes — flat, filbert, fan, or round — create dynamic strokes, and how palette knives build dramatic impasto textures.</p>
             <span class="blog-link">Read more <i class="fa-solid fa-arrow-right"></i></span>
           </div>
         </a>
 
-        <a href="blog details.html?post=yarn-weights" class="blog-card reveal" data-category="crafting">
+        <!-- Card 5: Paints & Colors -->
+        <a href="blog_details.html?post=paints-colors" class="blog-card reveal" data-category="paints">
           <div class="blog-photo">
-            <img src="images/post-yarn.jpg" alt="Vibrant shelves of multi-colored yarn rolls">
-            <span class="blog-cat-tag">Crafting</span>
+            <img src="images/blog-paints-art.png" alt="Artist mixing colorful acrylic and oil paints on glass palette in studio">
+            <span class="blog-cat-tag">Paints &amp; Colors</span>
           </div>
           <div class="blog-body">
             <div class="blog-meta">Jun 14, 2026 · 5 min read</div>
-            <h3>A Beginner's Guide to Yarn Weights for projects</h3>
-            <p>Lace, fingering, worsted, bulky — what the labels mean and which one to grab for your first project.</p>
+            <h3>Paints &amp; Colors: Mastering Color Wheels &amp; Lightfast Pigment Mixing</h3>
+            <p>Understand primary color temperature, complementary contrast, and lightfast ratings to mix clean, vibrant hues without muddying your palette.</p>
             <span class="blog-link">Read more <i class="fa-solid fa-arrow-right"></i></span>
           </div>
         </a>
 
-        <a href="blog details.html?post=store-art-supplies" class="blog-card reveal" data-category="painting">
+        <!-- Card 6: Art Tools & Studio Care -->
+        <a href="blog_details.html?post=store-art-supplies" class="blog-card reveal" data-category="brushes">
           <div class="blog-photo">
-            <img src="images/post-acrylic.jpg" alt="Colorful acrylic paints and brushes on a wooden table">
-            <span class="blog-cat-tag">Painting</span>
+            <img src="images/blog-tools-art.png" alt="Art tools and studio supplies organized on wooden studio workbench">
+            <span class="blog-cat-tag">Brushes</span>
           </div>
           <div class="blog-body">
             <div class="blog-meta">Jun 6, 2026 · 4 min read</div>
-            <h3>How to Store Your Art Supplies So They Actually Last</h3>
-            <p>Cracked paint tubes and warped paper are usually a storage problem, not a quality one. Here's the fix.</p>
+            <h3>Art Tools &amp; Studio Care: Preserving Paints, Brushes &amp; Easels</h3>
+            <p>Keep brush bristles smooth with natural soaps, prevent acrylic paint tubes from hardening, and organize studio tools for maximum lifespan.</p>
             <span class="blog-link">Read more <i class="fa-solid fa-arrow-right"></i></span>
           </div>
         </a>
@@ -219,13 +229,14 @@
             One email a week — restocks, new workshop slots, and the odd studio discount. No spam, unsubscribe any time.
         </p>
 
-        <form class="newsletter-cta-form" onsubmit="return false;">
-            <input type="email" placeholder="Your email address" aria-label="Email address" required>
+        <form class="newsletter-cta-form" id="blogNewsletterForm">
+            <input type="email" name="email" placeholder="Your email address" aria-label="Email address" required>
             <button type="submit" class="btn btn-primary">
                 <i class="fa-solid fa-paper-plane"></i>
                 Subscribe
             </button>
         </form>
+        <p class="form-success" id="blogNewsletterSuccess"><i class="fa-solid fa-circle-check"></i> You're subscribed! Watch your inbox.</p>
 
     </div>
 

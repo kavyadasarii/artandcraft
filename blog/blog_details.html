@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="page-title">Blog — ArtCraft Supply Studio</title>
+<meta name="description" id="page-meta-desc" content="Read the full article from ArtCraft Supply Studio — tips, guides and studio notes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="blog.css">
+<link rel="stylesheet" href="blogs_details.css">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+</head>
+<body>
+
+
+<header>
+  <nav class="wrap">
+    <a href="../index.html" class="logo">
+      <span class="logo-mark"><i class="fa-solid fa-palette"></i></span>
+      <span class="logo-text">
+        <span class="name">Art<span>Craft</span></span>
+        <span class="sub">SUPPLY STUDIO</span>
+      </span>
+    </a>
+
+    <ul class="nav-links">
+      <li class="nav-dropdown"><a href="../index.html">Home</a>
+        <button class="nav-drop-btn" type="button" aria-haspopup="true" aria-expanded="false">
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <ul class="nav-dropdown-menu">
+          <li><a href="../index.html">Home Classic</a></li>
+          <li><a href="../home2/home2.html">Home Modern</a></li>
+        </ul>
+      </li>
+      <li><a href="../about/about.html">About Us</a></li>
+      <li><a href="../service/service.html">Services</a></li>
+      <li><a href="../pricing/pricing.html">pricing</a></li>
+      <li><a href="../blog/blog.html" class="active">Blog</a></li>
+      <li><a href="../contact/contact 1.html">Contact</a></li>
+      <li class="nav-signup"><a href="../signup/login.html" class="btn btn-primary">Login</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="icon-btn" id="langToggle" aria-label="Toggle text direction" type="button"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode" type="button"><i class="fa-solid fa-sun"></i></button>
+      <a href="../signup/login.html" class="btn btn-primary btn-sm">Login</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  
+  <section class="bd-hero">
+    <div class="wrap bd-hero-inner reveal">
+      <div class="bd-breadcrumb">
+        <a href="blog.html"><i class="fa-solid fa-arrow-left"></i> Back to Blog</a>
+        <span class="bd-breadcrumb-sep">/</span>
+        <span id="bd-cat-breadcrumb" class="bd-breadcrumb-cat">Article</span>
+      </div>
+
+      <div class="bd-hero-badge">
+        <span id="bd-category-pill" class="bd-cat-pill">Category</span>
+        <span class="bd-read-badge"><i class="fa-regular fa-clock"></i> <span id="bd-read-time">5 min read</span></span>
+      </div>
+
+      <h1 id="bd-title" class="bd-title">Loading article&hellip;</h1>
+      <p id="bd-excerpt" class="bd-excerpt"></p>
+
+      <div class="bd-author-row">
+        <div class="bd-author-avatar" aria-hidden="true">
+          <i class="fa-solid fa-user-pen"></i>
+        </div>
+        <div class="bd-author-info">
+          <span id="bd-author" class="bd-author-name">Studio Team</span>
+          <span id="bd-date" class="bd-author-meta">Published &middot; ArtCraft Supply Studio</span>
+        </div>
+        <div class="bd-share-row">
+          <button class="bd-share-btn" id="bdShareCopy" aria-label="Copy link" title="Copy link">
+            <i class="fa-solid fa-link"></i>
+          </button>
+          <a class="bd-share-btn" href="#" id="bdShareTwitter" target="_blank" rel="noopener" aria-label="Share on Twitter">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a class="bd-share-btn" href="#" id="bdShareFacebook" target="_blank" rel="noopener" aria-label="Share on Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+        </div>
+      </div>
+      
+      <div class="bd-stats-bar" id="bdStatsBar"></div>
+    </div>
+  </section>
+
+  
+  <section class="bd-cover-section">
+    <div class="wrap reveal">
+      <figure class="bd-cover-wrap">
+        <img id="bd-cover-img" src="images/bd-cover.jpg" alt="Article cover image" class="bd-cover-img">
+        <figcaption id="bd-cover-caption" class="bd-cover-caption">Studio supplies at ArtCraft &mdash; Hyderabad</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  
+  <section class="bd-gallery-section">
+    <div class="wrap reveal">
+      <div class="bd-gallery-grid" id="bdGalleryGrid"></div>
+    </div>
+  </section>
+
+  
+  <section class="bd-article-section">
+    <div class="wrap bd-article-layout">
+
+      
+      <aside class="bd-sidebar reveal">
+        <div class="bd-sidebar-sticky">
+          <p class="bd-toc-label">In this article</p>
+          <nav class="bd-toc" id="bdToc" aria-label="Table of contents"></nav>
+
+          <div class="bd-sidebar-cta">
+            <p>Want to learn in person?</p>
+            <a href="../service/service.html" class="btn btn-primary bd-cta-btn">View Workshops</a>
+          </div>
+        </div>
+      </aside>
+
+      
+      <article class="bd-content reveal" id="bdArticleBody">
+
+        
+        <div class="bd-intro-callout" id="bdIntroCallout">
+          <i class="fa-solid fa-quote-left bd-quote-icon"></i>
+          <p id="bdIntroText">Every great artist started with confusion. The trick is knowing which confusion is worth paying attention to.</p>
+        </div>
+
+        
+        <div id="bdKeyTakeaways"></div>
+
+        
+        <div id="bdArticleSections"></div>
+
+        
+        <div id="bdSuppliesGrid"></div>
+
+        
+        <div class="bd-tags-row" id="bdTagsRow"></div>
+
+        
+        <div class="bd-react-bar">
+          <button class="bd-react-btn" id="bdLikeBtn" aria-label="Like this post">
+            <i class="fa-regular fa-heart"></i>
+            <span id="bdLikeCount">24</span> Likes
+          </button>
+          <button class="bd-react-btn" id="bdBookmarkBtn" aria-label="Save this post">
+            <i class="fa-regular fa-bookmark"></i> Save
+          </button>
+          <button class="bd-react-btn" id="bdShareInline" aria-label="Copy link">
+            <i class="fa-solid fa-share-nodes"></i> Share
+          </button>
+        </div>
+
+      </article>
+    </div>
+  </section>
+
+  
+  <section class="bd-author-bio-section">
+    <div class="wrap bd-author-bio-inner reveal">
+      <div class="bd-bio-avatar" aria-hidden="true">
+        <i class="fa-solid fa-palette"></i>
+      </div>
+      <div class="bd-bio-copy">
+        <span class="bd-bio-label">Written by</span>
+        <h3 id="bdBioName" class="bd-bio-name">The Studio Team</h3>
+        <p id="bdBioPara" class="bd-bio-text">We&rsquo;re the makers behind the counter at ArtCraft Supply Studio, Road No. 12, Hyderabad. We test every medium we stock, run hands-on workshops, and write about what we learn &mdash; so you can spend less time Googling and more time creating.</p>
+        <div class="bd-bio-actions">
+          <a href="blog.html" class="btn btn-outline bd-bio-btn">More articles</a>
+          <a href="../contact/contact 1.html" class="btn btn-primary bd-bio-btn">Say hello</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="bd-related-section">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Keep reading</span>
+        <h2>Related <em>articles</em>.</h2>
+        <p>More from the ArtCraft studio &mdash; hand-picked to match what you just read.</p>
+      </div>
+      <div class="blog-grid bd-related-grid" id="bdRelatedGrid">
+        
+      </div>
+      <div class="bd-related-cta reveal">
+        <a href="blog.html" class="btn btn-outline">View all articles <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  
+<section class="bd-final-cta-section">
+
+    <div class="wrap">
+
+        <div class="bd-final-cta-box reveal">
+
+            <span class="eyebrow bd-final-cta-eyebrow">
+                <i class="fa-solid fa-palette"></i>
+                Start Your Creative Journey
+            </span>
+
+            <h2 class="bd-final-cta-heading">
+                Ready to <em>unleash your creativity</em>?
+            </h2>
+
+            <p class="bd-final-cta-text">
+                Explore premium art supplies, join inspiring workshops, and enjoy exclusive member benefits. Everything you need to create your next masterpiece is waiting for you.
+            </p>
+
+            <div class="bd-final-cta-buttons">
+
+                <a href="#" class="btn btn-primary">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    Shop Now
+                </a>
+
+                <a href="../service/service.html" class="btn btn-outline">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    View Workshops
+                </a>
+
+            </div>
+
+            <div class="bd-final-cta-note">
+
+                <span><i class="fa-solid fa-award"></i> Premium Products</span>
+                <span><i class="fa-solid fa-truck"></i> Fast Delivery</span>
+                <span><i class="fa-solid fa-shield-halved"></i> Secure Shopping</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-mark"><i class="fa-solid fa-palette"></i></span>
+          <span class="logo-text">
+            <span class="name">Art<span>Craft</span></span>
+            <span class="sub">SUPPLY STUDIO</span>
+          </span>
+        </a>
+        <p>An art and craft supply shop for painters, drawers, sculptors, and makers of all kinds — right on Road No. 12, Hyderabad.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <a href="../index.html">Home 1</a>
+        <a href="../home2/home2.html">Home 2</a>
+        <a href="../about/about.html">About Us</a>
+        <a href="../service/service.html">Services</a>
+        <a href="../blog/blog.html" class="active">blog</a>
+        <a href="../contact/contact 1.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h5>Additional pages</h5>
+        <a href="../additional/404.html">404 page</a>
+        <a href="../additional/coming-soon.html">Coming-soon</a>
+        <a href="../pricing/pricing.html">Pricing</a>
+      </div>
+      <div class="footer-col">
+    <h5>Contact</h5>
+
+    <a href="tel:+919876543210">
+        <i class="fa-solid fa-phone"></i> +91 98765 43210
+    </a>
+
+    <a href="mailto:hello@artcraftstudio.in">
+        <i class="fa-solid fa-envelope"></i> hello@artcraftstudio.in
+    </a>
+
+    <a href="https://maps.google.com/?q=Road+No.+12,+Banjara+Hills,+Hyderabad,+Telangana+500034" target="_blank">
+        <i class="fa-solid fa-location-dot"></i> Hyderabad, Telangana
+    </a>
+
+    <a href="https://wa.me/919876543210" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp
+    </a>
+</div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ArtCraft Supply Studio, Hyderabad.</span>
+      <span>Made with paint-stained hands.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="bd-toast" id="bdToast" role="status" aria-live="polite">
+  <i class="fa-solid fa-circle-check"></i> Link copied!
+</div>
+
+<script src="blog-main.js"></script>
+<script src="blogs_details.js"></script>
+</body>
+</html>
