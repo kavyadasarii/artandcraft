@@ -83,8 +83,24 @@ body[dir="rtl"] .eyebrow{ letter-spacing:0; }
 .btn-outline{background:transparent;border-color:var(--ink);color:var(--ink);}
 .btn-outline:hover{background:var(--surface-alt);}
 .btn-sm{padding:9px 20px;font-size:0.84rem;}
+a[href*="booking"][class*="btn-primary"] {
+    background: #D85A1A;
+    border-color: #D85A1A;
+    color: #FFFFFF;
+}
 
+a[href*="booking"][class*="btn-primary"]:hover {
+    background: #B94712;
+    border-color: #B94712;
+    color: #FFFFFF;
+}
+.nav-dropdown-menu {
+    text-align: center;
+}
 
+.nav-dropdown-menu li a {
+    text-align: center;
+}
 header{background:var(--surface);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;}
 nav.wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-block:14px;}
 
@@ -803,6 +819,21 @@ body[dir="rtl"] .mission-features li:hover{transform:translateX(-8px);}
   .timeline-item:nth-child(odd) .timeline-dot,
   .timeline-item:nth-child(even) .timeline-dot{left:0;right:auto;}
   .timeline-card{text-align:left;}
+}
+
+/* RTL: mirror the alternating timeline so it reads correctly right-to-left */
+body[dir="rtl"] .timeline-item:nth-child(odd){margin-left:50%;margin-right:0;text-align:left;}
+body[dir="rtl"] .timeline-item:nth-child(even){margin-left:0;margin-right:50%;text-align:right;}
+body[dir="rtl"] .timeline-item:nth-child(odd) .timeline-dot{left:-9px;right:auto;}
+body[dir="rtl"] .timeline-item:nth-child(even) .timeline-dot{right:-9px;left:auto;}
+body[dir="rtl"] .timeline-card{text-align:right;}
+
+@media (max-width:1023px){
+  body[dir="rtl"] .timeline::before{left:auto;right:8px;}
+  body[dir="rtl"] .timeline-item{text-align:right !important;padding:0 40px 40px 0;}
+  body[dir="rtl"] .timeline-item:nth-child(odd) .timeline-dot,
+  body[dir="rtl"] .timeline-item:nth-child(even) .timeline-dot{right:0;left:auto;}
+  body[dir="rtl"] .timeline-card{text-align:right;}
 }
 
 
