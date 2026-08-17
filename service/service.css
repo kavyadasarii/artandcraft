@@ -81,7 +81,17 @@ body[dir="rtl"] .eyebrow{ letter-spacing:0; }
 .btn-outline{background:transparent;border-color:var(--ink);color:var(--ink);}
 .btn-outline:hover{background:var(--surface-alt);}
 .btn-sm{padding:9px 20px;font-size:0.84rem;}
+a[href*="booking"][class*="btn-primary"] {
+    background: #D85A1A;
+    border-color: #D85A1A;
+    color: #FFFFFF;
+}
 
+a[href*="booking"][class*="btn-primary"]:hover {
+    background: #B94712;
+    border-color: #B94712;
+    color: #FFFFFF;
+}
 
 header{background:var(--surface);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;}
 nav.wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-block:14px;}
