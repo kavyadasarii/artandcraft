@@ -83,7 +83,17 @@ body[dir="rtl"] .eyebrow{ letter-spacing:0; }
 .btn-outline{background:transparent;border-color:var(--ink);color:var(--ink);}
 .btn-outline:hover{background:var(--surface-alt);}
 .btn-sm{padding:9px 20px;font-size:0.84rem;}
+a[href*="booking"][class*="btn-primary"] {
+    background: #D85A1A;
+    border-color: #D85A1A;
+    color: #FFFFFF;
+}
 
+a[href*="booking"][class*="btn-primary"]:hover {
+    background: #B94712;
+    border-color: #B94712;
+    color: #FFFFFF;
+}
 
 header{background:var(--surface);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;}
 nav.wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-block:14px;}
@@ -160,11 +170,6 @@ section{padding:88px 0;}
   to{ transform:scale(1.07); }
 }
 
-/* =========================================================
-     HERO & ALTERNATING SECTION BACKGROUND THEME COLORS
-     Matches About page alternating background theme colors
-     (Mobile < 640px, Tablet 640-1024px, Desktop 1024-1280px, Large > 1280px)
-     ========================================================= */
 
   .blog-hero {
     position: relative;
@@ -174,7 +179,6 @@ section{padding:88px 0;}
     transition: background .25s ease;
   }
 
-  /* ALTERNATING SECTION BACKGROUND THEME COLORS (Matches About Page) */
   .blog-featured-section {
     background: var(--surface-alt);
     border-top: 1px solid var(--border);
@@ -196,7 +200,6 @@ section{padding:88px 0;}
     align-items: center;
   }
 
-  /* LEFT SIDE CONTENT STYLING */
   .blog-hero-content {
     display: flex;
     flex-direction: column;
@@ -239,7 +242,6 @@ section{padding:88px 0;}
     margin-top: 30px;
   }
 
-  /* Theme Button Sizing Preservation */
   .blog-hero-actions .btn {
     font-size: 0.94rem;
     padding: 15px 28px;
@@ -301,7 +303,6 @@ section{padding:88px 0;}
     box-shadow: 0 4px 10px rgba(193, 101, 45, 0.15);
   }
 
-  /* RIGHT SIDE IMAGE CONTAINER STYLING */
   .blog-hero-image-wrap {
     position: relative;
     width: 100%;
@@ -366,15 +367,6 @@ section{padding:88px 0;}
     color: #F5EFE6;
   }
 
-  /* ---------------------------------------------------------
-     EXPLICIT MEDIA QUERIES BREAKDOWN FOR BLOG HERO SECTION
-     - Mobile:          < 640px
-     - Tablet:          640px - 1024px
-     - Desktop/Laptop:  1024px - 1280px (UNCHANGED / PRESERVED)
-     - Large:           > 1280px
-     --------------------------------------------------------- */
-
-  /* 1. Mobile: < 640px (iPhone, Samsung Galaxy, etc.) */
   @media (max-width: 639.98px) {
     .blog-hero {
       padding-block: 36px 44px !important;
@@ -472,7 +464,6 @@ section{padding:88px 0;}
     }
   }
 
-  /* 2. Tablet: 640px - 1024px */
   @media (min-width: 640px) and (max-width: 1023.98px) {
     .blog-hero {
       padding-block: 56px 64px;
@@ -513,7 +504,6 @@ section{padding:88px 0;}
     }
   }
 
-  /* 3. Desktop / Laptop: 1024px - 1280px (PRESERVED - UNCHANGED) */
   @media (min-width: 1024px) and (max-width: 1279.98px) {
     .blog-hero {
       padding-block: 72px 88px;
@@ -549,7 +539,6 @@ section{padding:88px 0;}
     }
   }
 
-  /* 4. Large: > 1280px */
   @media (min-width: 1280px) {
     .blog-hero {
       padding-block: 84px 100px;
