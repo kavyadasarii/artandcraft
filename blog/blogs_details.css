@@ -78,7 +78,17 @@
   color: var(--ink);
   margin-bottom: 18px;
 }
+a[href*="booking"][class*="btn-primary"] {
+    background: #D85A1A;
+    border-color: #D85A1A;
+    color: #FFFFFF;
+}
 
+a[href*="booking"][class*="btn-primary"]:hover {
+    background: #B94712;
+    border-color: #B94712;
+    color: #FFFFFF;
+}
 
 .bd-excerpt {
   font-size: 1.05rem;
